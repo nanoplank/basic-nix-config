@@ -16,6 +16,7 @@
       self.nixosModules.ly
       self.nixosModules.nvf
       self.nixosModules.nix
+      self.nixosModules.git
       inputs.nvf.nixosModules.default
     ];
 

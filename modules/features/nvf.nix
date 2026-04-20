@@ -15,7 +15,6 @@
           autocomplete.nvim-cmp.enable = true;
           treesitter.enable = true;
           lsp.enable = true;
-          lazy.enable = true;
           git.enable = true;
 
           languages = {
