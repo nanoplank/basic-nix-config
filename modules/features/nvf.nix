@@ -4,17 +4,21 @@
       enable = true;
       settings = {
         vim = {
-          #     theme = {
-          #       enable = true;
-          #       name = "gruvbox";
-          #      style = "dark";
-          #     };
+               theme = {
+                 enable = true;
+                 name = "everforest";
+                style = "dark";
+               };
 
           statusline.lualine.enable = true;
           telescope.enable = true;
           autocomplete.nvim-cmp.enable = true;
           treesitter.enable = true;
           lsp.enable = true;
+
+          presence = {
+          neocord.enable = true; 
+          };
 
           git = {
             enable = true;
