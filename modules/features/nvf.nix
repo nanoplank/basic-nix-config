@@ -4,11 +4,11 @@
       enable = true;
       settings = {
         vim = {
-               theme = {
-                 enable = true;
-                 name = "everforest";
-                style = "dark";
-               };
+          theme = {
+            enable = true;
+            name = "everforest";
+            style = "dark";
+          };
 
           statusline.lualine.enable = true;
           telescope.enable = true;
@@ -17,7 +17,7 @@
           lsp.enable = true;
 
           presence = {
-          neocord.enable = true; 
+            neocord.enable = true;
           };
 
           git = {
