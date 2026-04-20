@@ -15,7 +15,11 @@
           autocomplete.nvim-cmp.enable = true;
           treesitter.enable = true;
           lsp.enable = true;
-          git.enable = true;
+
+          git = {
+            enable = true;
+            neogit.enable = true;
+          };
 
           languages = {
             rust.enable = true;
