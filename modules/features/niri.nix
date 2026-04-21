@@ -41,6 +41,11 @@
 
         prefer-no-csd = {};
 
+        window-rule = {
+          geometry-corner-radius = 20;
+          clip-to-geometry = true;
+        };
+
         input = {
           focus-follows-mouse = {};
 

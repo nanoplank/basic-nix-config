@@ -15,7 +15,7 @@
       self.nixosModules.nh
       self.nixosModules.ly
       self.nixosModules.nvf
-      self.nixosModules.nix 
+      self.nixosModules.nix
       inputs.nvf.nixosModules.default
     ];
 

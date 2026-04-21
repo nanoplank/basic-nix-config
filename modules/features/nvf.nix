@@ -6,7 +6,6 @@
         vim = {
           theme = {
             enable = true;
-            transparent = true;
           };
 
           statusline.lualine.enable = true;
@@ -15,13 +14,8 @@
           treesitter.enable = true;
           lsp.enable = true;
 
-          presence = {
-            neocord.enable = true;
-          };
-
           git = {
             enable = true;
-            neogit.enable = true;
           };
 
           languages = {
