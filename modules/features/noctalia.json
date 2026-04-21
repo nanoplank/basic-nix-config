@@ -3,7 +3,7 @@
     "settingsVersion": 59,
     "bar": {
       "barType": "simple",
-      "position": "top",
+      "position": "left",
       "monitors": [],
       "density": "spacious",
       "showOutline": false,
@@ -32,18 +32,10 @@
             "clockColor": "none",
             "customFont": "",
             "formatHorizontal": "HH:mm",
-            "formatVertical": "",
+            "formatVertical": "HH mm",
             "id": "Clock",
             "tooltipFormat": "",
             "useCustomFont": false
-          },
-          {
-            "hideWhenZero": false,
-            "hideWhenZeroUnread": false,
-            "iconColor": "none",
-            "id": "NotificationHistory",
-            "showUnreadBadge": true,
-            "unreadBadgeColor": "none"
           },
           {
             "compactMode": false,
@@ -56,7 +48,7 @@
             "showAlbumArt": true,
             "showArtistFirst": true,
             "showProgressRing": true,
-            "showVisualizer": true,
+            "showVisualizer": false,
             "textColor": "none",
             "useFixedWidth": false,
             "visualizerType": "wave"
@@ -65,30 +57,16 @@
             "displayMode": "forceOpen",
             "iconColor": "none",
             "id": "KeyboardLayout",
-            "showIcon": true,
+            "showIcon": false,
             "textColor": "none"
           },
           {
-            "compactMode": false,
-            "diskPath": "/",
+            "hideWhenZero": false,
+            "hideWhenZeroUnread": false,
             "iconColor": "none",
-            "id": "SystemMonitor",
-            "showCpuCores": false,
-            "showCpuFreq": false,
-            "showCpuTemp": false,
-            "showCpuUsage": false,
-            "showDiskAvailable": false,
-            "showDiskUsage": false,
-            "showDiskUsageAsPercent": false,
-            "showGpuTemp": false,
-            "showLoadAverage": false,
-            "showMemoryAsPercent": false,
-            "showMemoryUsage": true,
-            "showNetworkStats": false,
-            "showSwapUsage": false,
-            "textColor": "none",
-            "useMonospaceFont": true,
-            "usePadding": true
+            "id": "NotificationHistory",
+            "showUnreadBadge": true,
+            "unreadBadgeColor": "none"
           }
         ],
         "center": [
@@ -104,7 +82,7 @@
             "hideUnoccupied": true,
             "iconScale": 0.8,
             "id": "Workspace",
-            "labelMode": "index",
+            "labelMode": "none",
             "occupiedColor": "secondary",
             "pillSize": 0.6,
             "showApplications": false,
@@ -114,19 +92,24 @@
             "unfocusedIconsOpacity": 1
           },
           {
+            "defaultSettings": {
+              "colorHistory": [],
+              "detectedCompositor": "",
+              "detectedRecorder": "",
+              "filenameFormat": "",
+              "installedLangs": [
+                "eng"
+              ],
+              "paletteColors": [],
+              "screenshotPath": "",
+              "selectedOcrLang": "eng",
+              "transAvailable": false,
+              "videoPath": ""
+            },
             "id": "plugin:screen-toolkit"
           }
         ],
         "right": [
-          {
-            "blacklist": [],
-            "chevronColor": "none",
-            "colorizeIcons": true,
-            "drawerEnabled": false,
-            "hidePassive": false,
-            "id": "Tray",
-            "pinned": []
-          },
           {
             "deviceNativePath": "__default__",
             "displayMode": "graphic-clean",
@@ -135,6 +118,15 @@
             "id": "Battery",
             "showNoctaliaPerformance": false,
             "showPowerProfiles": false
+          },
+          {
+            "blacklist": [],
+            "chevronColor": "none",
+            "colorizeIcons": true,
+            "drawerEnabled": false,
+            "hidePassive": false,
+            "id": "Tray",
+            "pinned": []
           },
           {
             "displayMode": "onhover",
@@ -165,6 +157,7 @@
           {
             "colorizeDistroLogo": false,
             "colorizeSystemIcon": "tertiary",
+            "colorizeSystemText": "none",
             "customIconPath": "",
             "enableColorization": true,
             "icon": "snowflake",
@@ -739,7 +732,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-d6j6ko.png"
+      "eDP-1": "/home/nixed/Wallpapers/nix-snowflake-dark.png"
     },
     "desktopWidgetsEditMode": false,
     "display": {
@@ -757,7 +750,7 @@
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1776347908000
+      "lastSeenTs": 1776797497000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.5"
