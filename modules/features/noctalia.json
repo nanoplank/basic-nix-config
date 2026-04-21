@@ -156,11 +156,11 @@
           },
           {
             "colorizeDistroLogo": false,
-            "colorizeSystemIcon": "tertiary",
+            "colorizeSystemIcon": "error",
             "colorizeSystemText": "none",
             "customIconPath": "",
             "enableColorization": true,
-            "icon": "snowflake",
+            "icon": "niri",
             "id": "ControlCenter",
             "useDistroLogo": false
           }
@@ -732,7 +732,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/nix-snowflake-dark.png"
+      "eDP-1": "/home/nixed/Wallpapers/wallhaven-x8rkl3.png"
     },
     "desktopWidgetsEditMode": false,
     "display": {
