@@ -17,6 +17,7 @@
       self.nixosModules.nvf
       self.nixosModules.nix
       self.nixosModules.fish
+      self.nixosModules.packages
       inputs.nvf.nixosModules.default
     ];
 
