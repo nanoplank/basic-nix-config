@@ -19,6 +19,7 @@
       self.nixosModules.fish
       self.nixosModules.packages
       self.nixosModules.networking
+      self.nixosModules.locale
       inputs.nvf.nixosModules.default
     ];
 
