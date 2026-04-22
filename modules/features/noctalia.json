@@ -129,7 +129,7 @@
             "pinned": []
           },
           {
-            "displayMode": "onhover",
+            "displayMode": "alwaysHide",
             "iconColor": "none",
             "id": "Volume",
             "middleClickCommand": "pwvucontrol || pavucontrol",
@@ -156,7 +156,7 @@
           },
           {
             "colorizeDistroLogo": false,
-            "colorizeSystemIcon": "error",
+            "colorizeSystemIcon": "none",
             "colorizeSystemText": "none",
             "customIconPath": "",
             "enableColorization": true,
@@ -732,7 +732,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-x8rkl3.png"
+      "eDP-1": "/home/nixed/Wallpapers/nix-snowflake-dark.png"
     },
     "desktopWidgetsEditMode": false,
     "display": {
