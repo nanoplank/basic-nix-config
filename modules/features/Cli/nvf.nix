@@ -6,6 +6,7 @@
         vim = {
           theme = {
             enable = true;
+            transparent = true;
           };
 
           statusline.lualine.enable = true;
