@@ -18,6 +18,7 @@
       self.nixosModules.nix
       self.nixosModules.fish
       self.nixosModules.packages
+      self.nixosModules.networking
       inputs.nvf.nixosModules.default
     ];
 
@@ -33,16 +34,6 @@
 
     # Use latest kernel.
     boot.kernelPackages = pkgs.linuxPackages_latest;
-
-    networking.hostName = "nixos"; # Define your hostname.
-    # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-    # Configure network proxy if necessary
-    # networking.proxy.default = "http://user:password@proxy:port/";
-    # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-    # Enable networking
-    networking.networkmanager.enable = true;
 
     # BlueTooth
     hardware.bluetooth = {
@@ -87,25 +78,8 @@
 
     # List services that you want to enable:
     services = {
-      openssh.enable = true;
       desktopManager.plasma6.enable = true;
-      tailscale.enable = true;
       xserver.videoDrivers = ["nvidia"];
-
-      avahi = {
-        enable = true;
-        openFirewall = true;
-        nssmdns4 = true;
-        publish.enable = true;
-        publish.userServices = true;
-      };
-    };
-
-    # Open ports in the firewall.
-    networking = {
-      firewall.enable = true;
-      firewall.allowedTCPPorts = [9757];
-      firewall.allowedUDPPorts = [9757 5353];
     };
 
     system.stateVersion = "25.11";
