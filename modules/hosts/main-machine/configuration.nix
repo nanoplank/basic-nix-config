@@ -85,61 +85,6 @@
       shell = pkgs.fish;
     };
 
-    # Allow unfree packages
-    nixpkgs.config.allowUnfree = true;
-
-    environment.systemPackages = with pkgs; [
-      # core
-      ffmpeg-full
-      git
-      jq
-      lshw
-      btop
-      zoxide
-      imagemagick
-
-      # extra
-      cava
-      cmatrix
-      pipes-rs
-      fastfetch
-      yazi
-      torsocks
-
-      # desktop tools
-      librewolf
-      tor-browser
-      keepassxc
-      obsidian
-      gimp
-
-      # android
-      android-tools
-      scrcpy
-      android-file-transfer
-    ];
-
-    programs.obs-studio = {
-      enable = true;
-      enableVirtualCamera = true;
-    };
-
-    # List services that you want to enable:
-    services = {
-      openssh.enable = true;
-      desktopManager.plasma6.enable = true;
-      tailscale.enable = true;
-      xserver.videoDrivers = ["nvidia"];
-
-      avahi = {
-        enable = true;
-        openFirewall = true;
-        nssmdns4 = true;
-        publish.enable = true;
-        publish.userServices = true;
-      };
-    };
-
     # Open ports in the firewall.
     networking = {
       firewall.enable = true;
