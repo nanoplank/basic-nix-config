@@ -16,6 +16,7 @@
       self.nixosModules.ly
       self.nixosModules.nvf
       self.nixosModules.nix
+      self.nixosModules.fish
       inputs.nvf.nixosModules.default
     ];
 
@@ -74,14 +75,6 @@
     services.xserver.xkb = {
       layout = "us,ru";
       variant = "";
-    };
-
-    programs.fish = {
-      enable = true;
-
-      shellInit = ''
-        zoxide init fish | source
-      '';
     };
 
     users.users.nixed = {
