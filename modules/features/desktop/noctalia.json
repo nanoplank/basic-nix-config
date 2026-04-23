@@ -32,7 +32,7 @@
             "clockColor": "none",
             "customFont": "",
             "formatHorizontal": "HH:mm",
-            "formatVertical": "HH ---- mm",
+            "formatVertical": "HH --- mm",
             "id": "Clock",
             "tooltipFormat": "",
             "useCustomFont": false
@@ -242,13 +242,13 @@
       "smoothScrollEnabled": true
     },
     "ui": {
-      "fontDefault": "Sans Serif",
-      "fontFixed": "monospace",
+      "fontDefault": "JetBrainsMono Nerd Font",
+      "fontFixed": "JetBrainsMono Nerd Font",
       "fontDefaultScale": 1,
       "fontFixedScale": 1,
       "tooltipsEnabled": false,
       "scrollbarAlwaysVisible": false,
-      "boxBorderEnabled": true,
+      "boxBorderEnabled": false,
       "panelBackgroundOpacity": 0.93,
       "translucentWidgets": false,
       "panelsAttachedToBar": true,

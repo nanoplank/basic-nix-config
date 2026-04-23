@@ -10,12 +10,8 @@
       jetbrains-mono
       maple-mono.NF
       material-icons
-      minecraftia
+      monocraft
       montserrat
-      nerd-fonts.blex-mono
-      nerd-fonts.fira-mono
-      nerd-fonts.im-writing
-      nerd-fonts.iosevka-term
       nerd-fonts.jetbrains-mono
       nerd-fonts.lilex
       noto-fonts
@@ -28,10 +24,6 @@
       roboto-mono
       source-sans
       source-serif
-      symbola
-      terminus_font
-      victor-mono
-      vista-fonts
     ];
   };
 }
