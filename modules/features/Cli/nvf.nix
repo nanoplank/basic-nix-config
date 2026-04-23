@@ -9,17 +9,6 @@
             transparent = true;
           };
 
-          lazy = {
-            enable = true;
-
-            plugins = {
-              smear-cursor-nvim = {
-                package = "smear-cursor-nvim";
-                setupModule = "smear-cursor";
-              };
-            };
-          };
-
           statusline.lualine.enable = true;
           telescope.enable = true;
           autocomplete.nvim-cmp.enable = true;

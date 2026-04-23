@@ -20,6 +20,7 @@
       self.nixosModules.packages
       self.nixosModules.networking
       self.nixosModules.locale
+      self.nixosModules.extravimplugins
       inputs.nvf.nixosModules.default
     ];
 
