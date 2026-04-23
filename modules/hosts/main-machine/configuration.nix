@@ -18,7 +18,7 @@
       self.nixosModules.nix
       self.nixosModules.fish
       self.nixosModules.packages
-      self.nixosModules.networking
+      self.nixosModules.connectivity
       self.nixosModules.locale
       inputs.nvf.nixosModules.default
     ];
@@ -35,16 +35,6 @@
 
     # Use latest kernel.
     boot.kernelPackages = pkgs.linuxPackages_latest;
-
-    # BlueTooth
-    hardware.bluetooth = {
-      enable = true;
-      settings = {
-        General = {
-          Experimental = true;
-        };
-      };
-    };
 
     users.users.nixed = {
       isNormalUser = true;

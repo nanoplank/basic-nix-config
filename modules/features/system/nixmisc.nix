@@ -14,7 +14,6 @@
     nixpkgs.config.allowUnfree = true;
 
     environment.systemPackages = with pkgs; [
-      # Nix tooling
       alejandra
       manix
       nix-inspect

@@ -1,5 +1,11 @@
 {
-  flake.nixosModules.networking = {...}: {
+  flake.nixosModules.connectivity = {...}: {
+    hardware = {
+      bluetooth = {
+        enable = true;
+      };
+    };
+
     networking = {
       networkmanager.enable = true;
       hostName = "nixos";
@@ -11,7 +17,9 @@
     };
 
     services = {
-      openssh.enable = true;
+      openssh = {
+        enable = true;
+      };
 
       tailscale = {
         enable = true;
