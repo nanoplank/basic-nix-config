@@ -67,6 +67,14 @@
           };
         };
 
+        outputs = {
+          "eDP-1" = {
+            hot-corners = {
+              off = {};
+            };
+          };
+        };
+
         binds = {
           "Mod+Q".spawn = lib.getExe pkgs.wezterm;
           "Mod+R".spawn = lib.getExe pkgs.fuzzel;
