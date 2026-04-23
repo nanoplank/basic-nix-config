@@ -14,8 +14,8 @@
       "contentPadding": 2,
       "fontScale": 1,
       "enableExclusionZoneInset": true,
-      "backgroundOpacity": 0.93,
-      "useSeparateOpacity": false,
+      "backgroundOpacity": 1,
+      "useSeparateOpacity": true,
       "marginVertical": 4,
       "marginHorizontal": 4,
       "frameThickness": 8,
@@ -32,7 +32,7 @@
             "clockColor": "none",
             "customFont": "",
             "formatHorizontal": "HH:mm",
-            "formatVertical": "HH mm",
+            "formatVertical": "HH ---- mm",
             "id": "Clock",
             "tooltipFormat": "",
             "useCustomFont": false
@@ -252,7 +252,7 @@
       "panelBackgroundOpacity": 0.93,
       "translucentWidgets": false,
       "panelsAttachedToBar": true,
-      "settingsPanelMode": "attached",
+      "settingsPanelMode": "window",
       "settingsPanelSideBarCardStyle": false
     },
     "location": {
@@ -732,7 +732,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/nix-snowflake-dark.png"
+      "eDP-1": "/home/nixed/Wallpapers/wallhaven-qzyyxd.png"
     },
     "desktopWidgetsEditMode": false,
     "display": {
