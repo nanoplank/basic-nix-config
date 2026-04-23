@@ -4,10 +4,11 @@
       enable = true;
       settings = {
         vim = {
-          theme = {
-            enable = true;
-            name = "everforest";
-          };
+          #          theme = {
+          #            enable = true;
+          #            name = "gruvbox";
+          #            style = "soft";
+          #          };
 
           statusline = {
             lualine = {
