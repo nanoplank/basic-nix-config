@@ -18,7 +18,6 @@
       nerd-fonts.iosevka-term
       nerd-fonts.jetbrains-mono
       nerd-fonts.lilex
-      nerd-fonts.ubuntu
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
