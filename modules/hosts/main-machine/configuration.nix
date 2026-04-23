@@ -20,6 +20,7 @@
       self.nixosModules.packages
       self.nixosModules.connectivity
       self.nixosModules.locale
+      self.nixosModules.fonts
       inputs.nvf.nixosModules.default
     ];
 
