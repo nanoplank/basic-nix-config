@@ -11,8 +11,12 @@
     };
 
     services = {
-      tailscale.enable = true;
       openssh.enable = true;
+
+      tailscale = {
+        enable = true;
+        useRoutingFeatures = "server";
+      };
 
       avahi = {
         enable = true;
@@ -23,7 +27,7 @@
       };
     };
 
-    boot.kernel.sysctl."net.ipv4.ip_forward" = 1;
-    boot.kernel.sysctl."net.ipv6.ip_forward" = 1;
+    #    boot.kernel.sysctl."net.ipv4.ip_forward" = 1;
+    #    boot.kernel.sysctl."net.ipv6.ip_forward" = 1;
   };
 }
