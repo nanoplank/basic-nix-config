@@ -17,7 +17,7 @@
       pipes-rs
       fastfetch
       yazi
-      torsocks
+      oniux
 
       # desktop tools
       librewolf
