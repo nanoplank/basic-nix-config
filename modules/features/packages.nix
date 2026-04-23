@@ -25,6 +25,7 @@
       keepassxc
       obsidian
       gimp
+      feather
 
       # android
       android-tools
