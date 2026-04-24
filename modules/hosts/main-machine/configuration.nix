@@ -12,13 +12,13 @@
       inputs.nvf.nixosModules.default
       inputs.hjem.nixosModules.default
       self.nixosModules.mainMachineHardware
+      self.nixosModules.users
       self.nixosModules.gaming
       self.nixosModules.niri
       self.nixosModules.nh
       self.nixosModules.ly
       self.nixosModules.nvf
       self.nixosModules.nix
-      self.nixosModules.fish
       self.nixosModules.packages
       self.nixosModules.connectivity
       self.nixosModules.locale
@@ -37,23 +37,6 @@
 
     # Use latest kernel.
     boot.kernelPackages = pkgs.linuxPackages_latest;
-
-    users.users.nixed = {
-      isNormalUser = true;
-      description = "Nixed";
-      extraGroups = ["networkmanager" "wheel"];
-      shell = pkgs.fish;
-    };
-
-    hjem.users = {
-      nixed = {
-        user = "nixed";
-        directory = "/home/nixed";
-        files = {
-          ".config/test.json".text = "stuff";
-        };
-      };
-    };
 
     # List services that you want to enable:
     services = {
