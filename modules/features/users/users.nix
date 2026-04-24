@@ -27,6 +27,12 @@
           $env.config.show_banner = false
           source ~/.zoxide.nu
           ";
+
+          # Ghostty
+          ".config/ghostty/config.ghostty".text = "
+          theme = noctalia
+          confirm-close-surface = false
+          ";
         };
       };
     };

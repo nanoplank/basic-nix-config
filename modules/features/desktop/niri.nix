@@ -76,7 +76,7 @@
         };
 
         binds = {
-          "Mod+Q".spawn = lib.getExe pkgs.wezterm;
+          "Mod+Q".spawn = lib.getExe pkgs.ghostty;
           "Mod+R".spawn = lib.getExe pkgs.fuzzel;
           "Mod+C".close-window = {};
           "Mod+F".maximize-column = {};

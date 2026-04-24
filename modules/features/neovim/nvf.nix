@@ -10,6 +10,14 @@
           #            style = "soft";
           #          };
 
+          clipboard = {
+            enable = true;
+            providers = {
+              wl-copy.enable = true;
+            };
+            registers = "unnamedplus";
+          };
+
           statusline = {
             lualine = {
               enable = true;
