@@ -57,6 +57,7 @@
 
           languages = {
             rust.enable = true;
+            nu.enable = true;
             nix.enable = true;
             zig.enable = true;
             haskell.enable = true;
