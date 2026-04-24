@@ -653,10 +653,6 @@
         },
         {
           "enabled": true,
-          "id": "hyprtoolkit"
-        },
-        {
-          "enabled": true,
           "id": "kcolorscheme"
         },
         {
@@ -669,11 +665,11 @@
         },
         {
           "enabled": true,
-          "id": "wezterm"
+          "id": "pywalfox"
         },
         {
           "enabled": true,
-          "id": "pywalfox"
+          "id": "ghostty"
         }
       ],
       "enableUserTheming": false
@@ -732,7 +728,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-qzyyxd.png"
+      "eDP-1": "/home/nixed/Wallpapers/wallhaven-odq5ml.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
