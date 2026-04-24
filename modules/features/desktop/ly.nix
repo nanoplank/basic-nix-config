@@ -1,7 +1,7 @@
-{
+{...}: {
   flake.nixosModules.ly = {...}: {
     services.displayManager = {
-      defaultSession = "niri";
+      defaultSession = "Niri";
       ly = {
         enable = true;
         settings = {

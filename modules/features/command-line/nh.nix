@@ -1,4 +1,4 @@
-{
+{...}: {
   flake.nixosModules.nh = {pkgs, ...}: {
     programs.nh = {
       enable = true;

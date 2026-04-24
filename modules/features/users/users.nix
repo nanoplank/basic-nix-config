@@ -1,4 +1,4 @@
-{
+{...}: {
   flake.nixosModules.users = {
     pkgs,
     lib,

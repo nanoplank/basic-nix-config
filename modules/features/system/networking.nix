@@ -1,4 +1,4 @@
-{
+{...}: {
   flake.nixosModules.connectivity = {...}: {
     hardware = {
       bluetooth = {
