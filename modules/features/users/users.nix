@@ -16,10 +16,16 @@
         user = "nixed";
         directory = "/home/nixed";
         files = {
-          ".config/test.json".text = "
-          stuff
-          foo
-          bar
+          # nushell configuration
+          ".config/nushell/env.nu".text = "
+          zoxide init nushell | save -f ~/.zoxide.nu
+          ";
+
+          ".config/nushell/zoxide.nu".text = "";
+
+          ".config/nushell/config.nu".text = "
+          $env.config.show_banner = false
+          source ~/.zoxide.nu
           ";
         };
       };
