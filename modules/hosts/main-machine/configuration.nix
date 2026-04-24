@@ -9,6 +9,8 @@
     ...
   }: {
     imports = [
+      inputs.nvf.nixosModules.default
+      inputs.hjem.nixosModules.default
       self.nixosModules.mainMachineHardware
       self.nixosModules.gaming
       self.nixosModules.niri
@@ -20,8 +22,7 @@
       self.nixosModules.packages
       self.nixosModules.connectivity
       self.nixosModules.locale
-      self.nixosModules.fonts
-      inputs.nvf.nixosModules.default
+      self.nixosModules.fonts 
     ];
 
     # Bootloader
