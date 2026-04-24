@@ -22,7 +22,7 @@
       self.nixosModules.packages
       self.nixosModules.connectivity
       self.nixosModules.locale
-      self.nixosModules.fonts 
+      self.nixosModules.fonts
     ];
 
     # Bootloader
@@ -43,6 +43,16 @@
       description = "Nixed";
       extraGroups = ["networkmanager" "wheel"];
       shell = pkgs.fish;
+    };
+
+    hjem.users = {
+      nixed = {
+        user = "nixed";
+        directory = "/home/nixed";
+        files = {
+          ".config/test.json".text = "stuff";
+        };
+      };
     };
 
     # List services that you want to enable:
