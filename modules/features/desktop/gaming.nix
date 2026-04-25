@@ -42,7 +42,6 @@
     };
 
     environment.systemPackages = with pkgs; [
-      lutris
       prismlauncher
       osu-lazer-bin
       dxvk
