@@ -7,7 +7,7 @@
     hjem.users = {
       nixed = {
         files = {
-          ".config/nushell/env.nu".text = "foobar";
+          ".config/stuff/foo.nu".text = "foobar";
         };
       };
     };
