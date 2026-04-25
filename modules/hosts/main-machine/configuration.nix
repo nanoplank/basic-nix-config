@@ -13,14 +13,15 @@
       inputs.hjem.nixosModules.default
       self.nixosModules.mainMachineHardware
       self.nixosModules.users
-      self.nixosModules.gaming
-      self.nixosModules.niri
+      #      self.nixosModules.gaming
+      #      self.nixosModules.niri
       self.nixosModules.nh
       self.nixosModules.nushell
-      self.nixosModules.ly
+      #      self.nixosModules.ly
       self.nixosModules.nvf
       self.nixosModules.nix
-      self.nixosModules.packages
+      self.nixosModules.desktop
+      #      self.nixosModules.packages
       self.nixosModules.connectivity
       self.nixosModules.locale
       self.nixosModules.fonts
