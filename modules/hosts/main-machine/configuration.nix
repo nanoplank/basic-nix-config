@@ -13,7 +13,6 @@
       inputs.hjem.nixosModules.default
       self.nixosModules.mainMachineHardware
       self.nixosModules.users
-      self.nixosModules.hjemtest
       self.nixosModules.gaming
       self.nixosModules.niri
       self.nixosModules.nh
