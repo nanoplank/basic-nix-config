@@ -15,6 +15,7 @@
       self.nixosModules.users
       self.nixosModules.desktop
       self.nixosModules.system
+      self.nixosModules.cli
     ];
 
     # Bootloader
