@@ -5,6 +5,7 @@
       self.nixosModules.ly
       self.nixosModules.niri
       self.nixosModules.terminal
+      self.nixosModules.terminalshaders
     ];
   };
 }

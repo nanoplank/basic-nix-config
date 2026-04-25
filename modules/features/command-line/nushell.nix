@@ -1,9 +1,5 @@
 {...}: {
-  flake.nixosModules.nushell = {
-    pkgs,
-    lib,
-    ...
-  }: {
+  flake.nixosModules.nushell = {...}: {
     hjem.users = {
       nixed = {
         files = {

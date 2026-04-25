@@ -1,14 +1,5 @@
 {...}: {
-  flake.nixosModules.terminal = {
-    pkgs,
-    lib,
-    self,
-    ...
-  }: {
-    imports = [
-      self.nixosModules.terminalshaders
-    ];
-
+  flake.nixosModules.terminal = {...}: {
     hjem.users = {
       nixed = {
         files = {

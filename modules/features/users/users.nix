@@ -1,9 +1,5 @@
 {...}: {
-  flake.nixosModules.users = {
-    pkgs,
-    lib,
-    ...
-  }: {
+  flake.nixosModules.users = {pkgs, ...}: {
     users.users.nixed = {
       isNormalUser = true;
       description = "Nixed";
