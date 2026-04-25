@@ -12,7 +12,7 @@
 
       # Firewall
       firewall.enable = true;
-      firewall.allowedTCPPorts = [9757];
+      firewall.allowedTCPPorts = [9757 5353];
       firewall.allowedUDPPorts = [9757 5353];
     };
 
