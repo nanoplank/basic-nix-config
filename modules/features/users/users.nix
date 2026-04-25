@@ -15,13 +15,6 @@
       nixed = {
         user = "nixed";
         directory = "/home/nixed";
-        files = {
-          # Ghostty
-          ".config/ghostty/config.ghostty".text = "
-          theme = noctalia
-          confirm-close-surface = false
-          ";
-        };
       };
     };
   };
