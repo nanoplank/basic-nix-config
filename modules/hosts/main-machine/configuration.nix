@@ -27,15 +27,8 @@
     };
 
     boot.loader.efi.canTouchEfiVariables = true;
-
-    # Use latest kernel.
+    # Kernel
     boot.kernelPackages = pkgs.linuxPackages_latest;
-
-    # List services that you want to enable:
-    services = {
-      desktopManager.plasma6.enable = true;
-      xserver.videoDrivers = ["nvidia"];
-    };
 
     system.stateVersion = "25.11";
   };

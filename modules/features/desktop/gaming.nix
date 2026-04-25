@@ -10,6 +10,10 @@
       nvidiaSettings = true;
     };
 
+    services = {
+      xserver.videoDrivers = ["nvidia"];
+    };
+
     hardware.nvidia.prime = {
       # offload.enable = true;
       # offload.enableOffloadCmd = true;
