@@ -16,6 +16,7 @@
       self.nixosModules.gaming
       self.nixosModules.niri
       self.nixosModules.nh
+      self.nixosModules.nushell
       self.nixosModules.ly
       self.nixosModules.nvf
       self.nixosModules.nix
