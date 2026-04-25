@@ -25,6 +25,7 @@
 
           ".config/nushell/config.nu".text = "
           $env.config.show_banner = false
+          $env.config.buffer_editor = 'nvim'
           source ~/.zoxide.nu
           ";
 

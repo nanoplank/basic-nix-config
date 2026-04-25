@@ -3,6 +3,7 @@
     environment.systemPackages = with pkgs; [
       # core
       ffmpeg-full
+      ripgrep
       tree
       git
       jq
