@@ -14,5 +14,10 @@ shell-integration-features = ssh-env,ssh-terminfo
         };
       };
     };
+    programs = {
+      starship = {
+        enable = true;
+      };
+    };
   };
 }
