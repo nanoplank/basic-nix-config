@@ -3,7 +3,7 @@
     users.users.nixed = {
       isNormalUser = true;
       description = "Nixed";
-      extraGroups = ["networkmanager" "wheel"];
+      extraGroups = ["networkmanager" "wheel" "libvirtd"];
       shell = pkgs.nushell;
     };
 
