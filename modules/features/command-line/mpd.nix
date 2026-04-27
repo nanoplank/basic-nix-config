@@ -8,8 +8,7 @@
         enable = true;
         musicDirectory = "~/Music";
         playlistDirectory = "~/Music/mpd/playlists";
-        dbFile = "~/Music/mpd/database";
+        };
+       };
       };
-    };
-  };
-}
+     } 
