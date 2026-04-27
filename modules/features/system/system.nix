@@ -8,6 +8,7 @@
       self.nixosModules.nix
       self.nixosModules.services
       self.nixosModules.vm
+      self.nixosModules.languages
     ];
   };
 }

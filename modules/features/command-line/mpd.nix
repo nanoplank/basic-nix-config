@@ -8,7 +8,7 @@
         enable = true;
         musicDirectory = "/home/nixed/Music";
         dataDir = "/home/nixed/Music/mpd";
-        };
-       };
       };
-     } 
+    };
+  };
+}
