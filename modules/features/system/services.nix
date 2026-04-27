@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   flake.nixosModules.services = {pkgs, ...}: {
     # List services that you want to enable:
     services = {
