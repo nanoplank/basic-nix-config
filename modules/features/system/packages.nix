@@ -34,9 +34,12 @@
       android-file-transfer
     ];
 
-    programs.obs-studio = {
-      enable = true;
-      enableVirtualCamera = true;
+    programs = {
+      nano.enable = false;
+      obs-studio = {
+        enable = true;
+        enableVirtualCamera = true;
+      };
     };
   };
 }
