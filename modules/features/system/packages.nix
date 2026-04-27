@@ -5,6 +5,7 @@
       ffmpeg-full
       ripgrep
       tree
+      vim
       git
       jq
       lshw
