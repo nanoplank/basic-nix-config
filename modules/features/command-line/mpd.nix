@@ -6,8 +6,6 @@
     services = {
       mpd = {
         enable = true;
-        musicDirectory = "~/Music";
-        playlistDirectory = "~/Music/mpd/playlists";
         };
        };
       };
