@@ -29,6 +29,9 @@
       gimp
       feather
 
+      # KDE
+      kdePackages.kleopatra
+
       # android
       android-tools
       scrcpy

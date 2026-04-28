@@ -3,9 +3,6 @@
     # List services that you want to enable:
     services = {
       desktopManager.plasma6.enable = true;
-      syncthing = {
-        enable = true;
-      };
     };
     environment = {
       plasma6 = {
