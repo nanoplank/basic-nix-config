@@ -5,6 +5,7 @@
       ffmpeg-full
       pinentry-all
       ripgrep
+      gnupg
       tree
       vim
       git
