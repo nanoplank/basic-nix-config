@@ -5,7 +5,6 @@
       ffmpeg-full
       pinentry-all
       ripgrep
-      gnupg
       tree
       vim
       git
@@ -31,9 +30,6 @@
       gimp
       feather
 
-      # KDE
-      kdePackages.kleopatra
-
       # android
       android-tools
       scrcpy
@@ -42,6 +38,9 @@
 
     programs = {
       nano.enable = false;
+      gnupg = {
+        package = pkgs.gnupg;
+      };
       obs-studio = {
         enable = true;
         enableVirtualCamera = true;
