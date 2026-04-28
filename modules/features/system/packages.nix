@@ -3,18 +3,20 @@
     environment.systemPackages = with pkgs; [
       # core
       ffmpeg-full
+      pinentry-all
       ripgrep
+      gnupg
       tree
       vim
       git
       jq
       lshw
-      btop
       zoxide
       imagemagick
 
       # extra
       cava
+      btop
       cmatrix
       pipes-rs
       fastfetch
