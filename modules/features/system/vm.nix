@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{...}: {
   flake.nixosModules.vm = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
       virt-manager

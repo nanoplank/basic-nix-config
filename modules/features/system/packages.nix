@@ -28,6 +28,7 @@
       obsidian
       gimp
       feather
+      syncthing
 
       # android
       android-tools
