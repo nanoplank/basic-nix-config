@@ -11,7 +11,6 @@
           custom-shader = shaders/cursor_tail.glsl
           shell-integration-features = ssh-env,ssh-terminfo
           background-opacity = 0.8
-          background-blur = true
           ";
         };
       };
