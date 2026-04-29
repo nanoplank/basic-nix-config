@@ -28,6 +28,7 @@
       tor-browser
       keepassxc
       obsidian
+      equibop
       gimp
       feather
 
