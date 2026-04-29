@@ -4,11 +4,11 @@
       enable = true;
       settings = {
         vim = {
-          #          theme = {
-          #            enable = true;
-          #            name = "gruvbox";
-          #            style = "soft";
-          #          };
+          theme = {
+            enable = true;
+            name = "everforest";
+            style = "hard";
+          };
 
           clipboard = {
             enable = true;

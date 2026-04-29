@@ -13,6 +13,7 @@
           ".config/nushell/config.nu".text = "
           $env.config.show_banner = false
           $env.config.buffer_editor = 'nvim'
+          $env.editor = 'nvim'
           mkdir ($nu.data-dir | path join 'vendor/autoload')
           starship init nu | save -f ($nu.data-dir | path join 'vendor/autoload/starship.nu')
           source ~/.zoxide.nu
