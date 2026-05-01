@@ -5,6 +5,7 @@
       ffmpeg-full
       pinentry-all
       ripgrep
+      yt-dlp
       gnupg
       tree
       vim
