@@ -16,7 +16,7 @@
     environment.systemPackages = with pkgs; [
       alejandra
       manix
-      nxi-tree
+      nix-tree
       nix-inspect
     ];
   };
