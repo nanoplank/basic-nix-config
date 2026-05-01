@@ -9,6 +9,22 @@
             transparent = true;
           };
 
+          keymaps = [
+            {
+              key = "<leader>m";
+              mode = "n";
+              silent = true;
+              action = ":Neotree";
+            }
+          ];
+
+          whichKey = {
+            enable = true;
+            setupOpts = {
+              preset = "helix";
+            };
+          };
+
           clipboard = {
             enable = true;
             providers = {
