@@ -52,6 +52,7 @@
           keyboard = {
             xkb = {
               layout = "us,ru";
+              options = "caps:swapescape";
             };
             repeat-rate = 40;
             repeat-delay = 250;
