@@ -7,6 +7,8 @@
           theme = {
             enable = true;
             transparent = true;
+            name = "everforest";
+            style = "soft";
           };
 
           keymaps = [
@@ -100,6 +102,7 @@
               enable = true;
               format = {
                 enable = true;
+                type = ["alejandra"];
               };
             };
 
