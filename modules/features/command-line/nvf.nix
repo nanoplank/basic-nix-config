@@ -18,10 +18,12 @@
             }
           ];
 
-          whichKey = {
-            enable = true;
-            setupOpts = {
-              preset = "helix";
+          binds = {
+            whichKey = {
+              enable = true;
+              setupOpts = {
+                preset = "helix";
+              };
             };
           };
 
