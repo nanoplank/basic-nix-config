@@ -6,7 +6,6 @@
       self.nixosModules.connectivity
       self.nixosModules.packages
       self.nixosModules.nix
-      self.nixosModules.services
       self.nixosModules.vm
       self.nixosModules.mpd
     ];
