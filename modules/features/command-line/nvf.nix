@@ -1,5 +1,5 @@
 {...}: {
-  flake.nixosModules.nvf = {pkgs, ...}: {
+  flake.nixosModules.nvf = {...}: {
     programs.nvf = {
       enable = true;
       settings = {

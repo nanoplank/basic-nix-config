@@ -1,11 +1,11 @@
 {...}: {
   flake.nixosModules.ly = {...}: {
     services.displayManager = {
-      defaultSession = "Niri";
       ly = {
         enable = true;
         settings = {
           clock = "%-I:%M %p  %a, %d %b %Y";
+          battery_id = "BAT0";
           save = true;
           show_tty = true;
           hide_borders = true;
