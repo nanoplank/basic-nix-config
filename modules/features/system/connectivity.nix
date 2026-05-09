@@ -24,7 +24,6 @@
       openssh = {
         enable = true;
         settings = {
-          UsePAM = false;
           PasswordAuthentication = false;
           KbdInteractiveAuthentication = false;
         };
