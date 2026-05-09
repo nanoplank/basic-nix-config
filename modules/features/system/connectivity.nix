@@ -7,13 +7,17 @@
     };
 
     networking = {
-      networkmanager.enable = true;
+      networkmanager = {
+        enable = true;
+      };
       hostName = "nixos";
 
       # Firewall
-      firewall.enable = true;
-      firewall.allowedTCPPorts = [9757 5353];
-      firewall.allowedUDPPorts = [9757 5353];
+      firewall = {
+        enable = true;
+        allowedTCPPorts = [9757 5353];
+        allowedUDPPorts = [9757 5353];
+      };
     };
 
     services = {
