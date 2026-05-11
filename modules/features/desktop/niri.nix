@@ -18,6 +18,7 @@
       qt6Packages.qt6ct
       grim
       slurp
+      gifski
       tesseract
       translate-shell
       zbar

@@ -4,22 +4,25 @@
     lib,
     ...
   }: {
-    hardware.nvidia = {
-      modesetting.enable = true;
-      open = true;
-      nvidiaSettings = true;
+    hardware = {
+      nvidia = {
+        modesetting.enable = true;
+        open = true;
+        videoAcceleration = true;
+        nvidiaSettings = true;
+
+        prime = {
+          # offload.enable = true;
+          # offload.enableOffloadCmd = true;
+          sync.enable = true;
+          intelBusId = "PCI:0:2:0";
+          nvidiaBusId = "PCI:01:00:0";
+        };
+      };
     };
 
     services = {
       xserver.videoDrivers = ["nvidia"];
-    };
-
-    hardware.nvidia.prime = {
-      # offload.enable = true;
-      # offload.enableOffloadCmd = true;
-      sync.enable = true;
-      intelBusId = "PCI:0:2:0";
-      nvidiaBusId = "PCI:01:00:0";
     };
 
     programs = {
