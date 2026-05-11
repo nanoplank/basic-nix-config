@@ -6,10 +6,12 @@
   }: {
     hardware = {
       graphics = {
+        enable = true;
         extraPackages = with pkgs; [
           nvidia-vaapi-driver
         ];
       };
+
       nvidia = {
         modesetting.enable = true;
         open = true;
@@ -26,8 +28,16 @@
       };
     };
 
+    environment = {
+      variables = {
+        LIBVA_DRIVER_NAME = "nvidia";
+      };
+    };
+
     services = {
-      xserver.videoDrivers = ["nvidia"];
+      xserver = {
+        videoDrivers = ["nvidia"];
+      };
     };
 
     programs = {
@@ -46,8 +56,6 @@
         ];
         # extraPackages = with pkgs; [
         #   SDL2
-        #   gamescope
-        #   er-patcher
         # ];
         protontricks.enable = true;
       };
