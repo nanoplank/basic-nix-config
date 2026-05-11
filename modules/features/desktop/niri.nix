@@ -22,7 +22,6 @@
       tesseract
       translate-shell
       zbar
-      wl-screenrec
     ];
   };
 
