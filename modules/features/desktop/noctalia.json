@@ -20,7 +20,7 @@
       "marginHorizontal": 4,
       "frameThickness": 8,
       "frameRadius": 12,
-      "outerCorners": true,
+      "outerCorners": false,
       "hideOnOverview": false,
       "displayMode": "always_visible",
       "autoHideDelay": 500,
@@ -249,7 +249,7 @@
       "tooltipsEnabled": false,
       "scrollbarAlwaysVisible": false,
       "boxBorderEnabled": false,
-      "panelBackgroundOpacity": 0.93,
+      "panelBackgroundOpacity": 1,
       "translucentWidgets": false,
       "panelsAttachedToBar": true,
       "settingsPanelMode": "window",
@@ -293,12 +293,12 @@
       "directory": "/home/nixed/Wallpapers",
       "monitorDirectories": [
         {
-          "directory": "/home/felix/Wallpapers",
+          "directory": "/home/nixed/Wallpapers",
           "name": "eDP-1",
           "wallpaper": ""
         }
       ],
-      "enableMultiMonitorDirectories": false,
+      "enableMultiMonitorDirectories": true,
       "showHiddenFiles": false,
       "viewMode": "single",
       "setWallpaperOnAllMonitors": true,
@@ -413,11 +413,11 @@
           "id": "brightness-card"
         },
         {
-          "enabled": true,
+          "enabled": false,
           "id": "weather-card"
         },
         {
-          "enabled": true,
+          "enabled": false,
           "id": "media-sysmon-card"
         }
       ]
@@ -496,7 +496,7 @@
       "position": "center",
       "showHeader": true,
       "showKeybinds": true,
-      "largeButtonsStyle": true,
+      "largeButtonsStyle": false,
       "largeButtonsLayout": "single-row",
       "powerOptions": [
         {
@@ -560,7 +560,7 @@
     "notifications": {
       "enabled": true,
       "enableMarkdown": false,
-      "density": "default",
+      "density": "compact",
       "monitors": [],
       "location": "top_right",
       "overlayLayer": true,
@@ -613,8 +613,8 @@
       "volumeFeedbackSoundFile": ""
     },
     "brightness": {
-      "brightnessStep": 5,
-      "enforceMinimum": true,
+      "brightnessStep": 1,
+      "enforceMinimum": false,
       "enableDdcSupport": false,
       "backlightDeviceMappings": []
     },
@@ -696,7 +696,7 @@
       "colorGeneration": ""
     },
     "plugins": {
-      "autoUpdate": true,
+      "autoUpdate": false,
       "notifyUpdates": false
     },
     "idle": {
@@ -728,25 +728,28 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-odq5ml.jpg"
+      "eDP-1": "/home/nixed/Wallpapers/fog_forest_2.png"
     },
     "desktopWidgetsEditMode": false,
     "display": {
       "eDP-1": {
-        "active_workspace": 1,
-        "focused": true,
-        "height": 1080,
         "name": "eDP-1",
-        "refresh_rate": 60,
+        "connected": true,
         "scale": 1,
-        "vrr": false,
         "width": 1920,
+        "height": 1080,
         "x": 0,
-        "y": 0
+        "y": 0,
+        "physical_width": 340,
+        "physical_height": 190,
+        "refresh_rate": 60000,
+        "vrr_supported": false,
+        "vrr_enabled": false,
+        "transform": "Normal"
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1776797497000
+      "lastSeenTs": 1778586466000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.5"
