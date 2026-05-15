@@ -2,7 +2,7 @@
   flake.nixosModules.users = {pkgs, ...}: {
     users.users.nixed = {
       isNormalUser = true;
-      initialPassword = "12345";
+      hashedPasswordFile = "/persistent/passwd";
       description = "Nixed";
       extraGroups = ["networkmanager" "wheel" "libvirtd"];
       shell = pkgs.nushell;
