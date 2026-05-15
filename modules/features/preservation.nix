@@ -23,7 +23,8 @@
           directories = [
             "basic-nix-config"
             "Wallpapers"
-            ".config/librewolf/" 
+            ".config/noctalia"
+            ".config/librewolf" 
             ".mozilla"
             ".local/share/zoxide"
             ".local/share/Steam"
