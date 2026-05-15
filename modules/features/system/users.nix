@@ -8,6 +8,8 @@
       shell = pkgs.nushell;
     };
 
+    users.mutableUsers = false;
+
     hjem.users = {
       nixed = {
         user = "nixed";
