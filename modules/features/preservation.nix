@@ -4,6 +4,7 @@
       enable = true;
       preserveAt."/persistent" = {
         directories = [
+          "/var/lib/systemd/timers"
           "/var/lib/bluetooth"
           {
             directory = "/var/lib/nixos";
@@ -23,6 +24,9 @@
             "basic-nix-config"
             "Wallpapers"
             ".config/librewolf/"
+            ".mozilla"
+            ".local/share/Steam"
+            ".steam"
           ];
         };
       };

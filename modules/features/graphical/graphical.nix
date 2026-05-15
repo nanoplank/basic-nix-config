@@ -1,5 +1,5 @@
 {self, ...}: {
-  flake.nixosModules.desktop = {...}: {
+  flake.nixosModules.graphical = {...}: {
     imports = [
       self.nixosModules.gaming
       self.nixosModules.ly

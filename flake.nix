@@ -2,8 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    disko.url = "github:nix-community/disko";
-    disko.inputs.nixpkgs.follows = "nixpkgs";
+    disko.url = "github:nix-community/disko"; 
     preservation.url = "github:nix-community/preservation";
     hjem.url = "github:feel-co/hjem";
     nvf.url = "github:notashelf/nvf";

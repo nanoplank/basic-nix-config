@@ -1,6 +1,5 @@
 {...}: {
   flake.nixosModules.kde = {pkgs, ...}: {
-    # List services that you want to enable:
     services = {
       desktopManager.plasma6.enable = true;
     };

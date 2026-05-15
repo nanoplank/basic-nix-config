@@ -4,10 +4,8 @@
       self.nixosModules.fonts
       self.nixosModules.locale
       self.nixosModules.connectivity
-      self.nixosModules.packages
       self.nixosModules.nix
-      self.nixosModules.vm
-      self.nixosModules.mpd
+      self.nixosModules.users
     ];
   };
 }

@@ -16,8 +16,8 @@
       self.nixosModules.mainMachineHardware
       self.nixosModules.disko
       self.nixosModules.preservation
-      self.nixosModules.users
-      self.nixosModules.desktop
+      self.nixosModules.packages
+      self.nixosModules.graphical
       self.nixosModules.system
       self.nixosModules.cli
     ];

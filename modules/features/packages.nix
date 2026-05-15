@@ -2,10 +2,10 @@
   flake.nixosModules.packages = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
       # core
-      #      ffmpeg-full
-      #      pinentry-all
-      #      ripgrep
-      #      yt-dlp
+      ffmpeg-full
+      pinentry-all
+      ripgrep
+      yt-dlp
       gnupg
       tree
       vim
@@ -44,10 +44,10 @@
       gnupg = {
         package = pkgs.gnupg;
       };
-      #      obs-studio = {
-      #        enable = true;
-      #        enableVirtualCamera = true;
-      #      };
+      obs-studio = {
+        enable = true;
+        enableVirtualCamera = true;
+      };
     };
   };
 }

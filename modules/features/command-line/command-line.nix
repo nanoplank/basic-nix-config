@@ -4,6 +4,7 @@
       self.nixosModules.nh
       self.nixosModules.nushell
       self.nixosModules.nvf
+      self.nixosModules.mpd
     ];
   };
 }
