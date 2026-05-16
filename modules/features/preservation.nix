@@ -23,10 +23,13 @@
           directories = [
             "basic-nix-config"
             "Wallpapers"
+            ".mozilla"
             ".config/noctalia"
             ".config/librewolf" 
-            ".mozilla"
+            ".config/r2modman"
+            ".config/r2modmanPlus-local" 
             ".local/share/zoxide"
+            ".local/share/PrismLauncher"
             ".local/share/Steam"
             ".steam"
           ];

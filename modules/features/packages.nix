@@ -32,6 +32,7 @@
       equibop
       gimp
       feather
+      ghostty
 
       # android
       android-tools
