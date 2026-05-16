@@ -6,6 +6,7 @@
         directories = [
           "/var/lib/systemd/timers"
           "/var/lib/bluetooth"
+          "/var/lib/mpd"
           {
             directory = "/var/lib/nixos";
             inInitrd = true;
@@ -23,6 +24,7 @@
           directories = [
             "basic-nix-config"
             "Wallpapers"
+            "Music"
             ".mozilla"
             ".config/noctalia"
             ".config/librewolf" 
