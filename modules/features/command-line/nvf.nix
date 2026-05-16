@@ -108,25 +108,25 @@
               };
             };
 
-            zig = {
-              enable = true;
-            };
+#            zig = {
+#              enable = true;
+#            };
 
-            haskell = {
-              enable = true;
-            };
+#            haskell = {
+#              enable = true;
+#            };
 
-            typescript = {
-              enable = true;
-            };
+#            typescript = {
+#              enable = true;
+#            };
 
-            python = {
-              enable = true;
-            };
-
-            lua = {
-              enable = true;
-            };
+#            python = {
+#              enable = true;
+#            };
+#
+#            lua = {
+#              enable = true;
+#            };
           };
         };
       };
