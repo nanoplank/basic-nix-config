@@ -5,8 +5,9 @@
       ffmpeg-full
       ripgrep
       yt-dlp
-      age
       tree
+      feh
+      age
       vim
       git
       jq
@@ -22,14 +23,14 @@
       pipes-rs
       fastfetchMinimal
       oniux
+      tor
+      torsocks
 
       # desktop tools
       librewolf
       tor-browser
       keepassxc
       obsidian
-      equibop
-      gimp
       feather
       ghostty
 
@@ -40,10 +41,6 @@
     ];
 
     programs = {
-      nano.enable = false;
-      gnupg = {
-        package = pkgs.gnupg;
-      };
       obs-studio = {
         enable = true;
         enableVirtualCamera = true;
