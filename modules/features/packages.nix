@@ -3,10 +3,9 @@
     environment.systemPackages = with pkgs; [
       # core
       ffmpeg-full
-      pinentry-all
       ripgrep
       yt-dlp
-      gnupg
+      age
       tree
       vim
       git
@@ -17,11 +16,11 @@
 
       # extra
       cava
+      yazi
       btop
       cmatrix
       pipes-rs
-      fastfetch
-      yazi
+      fastfetchMinimal
       oniux
 
       # desktop tools
