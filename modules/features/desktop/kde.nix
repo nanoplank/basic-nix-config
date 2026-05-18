@@ -1,7 +1,11 @@
 {...}: {
   flake.nixosModules.kde = {pkgs, ...}: {
     services = {
-      desktopManager.plasma6.enable = true;
+      desktopManager = {
+        plasma6 = {
+          enable = true;
+        };
+      };
     };
     environment = {
       plasma6 = {
@@ -10,6 +14,9 @@
           pkgs.kdePackages.qrca
           pkgs.kdePackages.konsole
           pkgs.kdePackages.elisa
+          pkgs.kdePackages.okular
+          pkgs.kdePackages.gwenview
+          pkgs.kdePackages.kate
         ];
       };
     };

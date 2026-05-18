@@ -13,13 +13,36 @@
       inputs.hjem.nixosModules.default
       inputs.disko.nixosModules.disko
       inputs.preservation.nixosModules.default
+
+      # hardware
       self.nixosModules.mainMachineHardware
+
+      # package bundles
+      self.nixosModules.core
+      self.nixosModules.extra
+      self.nixosModules.desktop
+      self.nixosModules.fonts
+
+      # desktop
+      self.nixosModules.niri
+      self.nixosModules.kde
+      self.nixosModules.ly
+
+      # system
+      self.nixosModules.users
+      self.nixosModules.locale
+      self.nixosModules.connectivity
+      self.nixosModules.nix
       self.nixosModules.disko
       self.nixosModules.preservation
-      self.nixosModules.packages
-      self.nixosModules.graphical
-      self.nixosModules.system
-      self.nixosModules.cli
+
+      # programs
+      self.nixosModules.nushell
+      self.nixosModules.terminal
+      self.nixosModules.nvf
+      self.nixosModules.mpd
+      self.nixosModules.nh
+      self.nixosModules.gaming
     ];
 
     boot.loader.systemd-boot.enable = true;
