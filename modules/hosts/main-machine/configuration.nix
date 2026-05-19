@@ -41,11 +41,11 @@
       # programs
       self.nixosModules.virtualization
       self.nixosModules.terminal
-      self.nixosModules.nushell 
+      self.nixosModules.nushell
       self.nixosModules.gaming
       self.nixosModules.nvf
       self.nixosModules.mpd
-      self.nixosModules.nh 
+      self.nixosModules.nh
     ];
 
     boot.loader.systemd-boot.enable = true;

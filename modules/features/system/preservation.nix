@@ -7,7 +7,7 @@
           "/var/lib/systemd/timers"
           "/var/lib/bluetooth"
           "/var/lib/libvirt"
-          "/var/lib/mpd" 
+          "/var/lib/mpd"
           {
             directory = "/var/lib/nixos";
             inInitrd = true;
