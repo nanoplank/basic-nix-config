@@ -25,15 +25,22 @@
             "basic-nix-config"
             "Wallpapers"
             "Music"
+
+            # dotfiles
             ".mozilla"
+            ".steam"
+
+            # .config
             ".config/noctalia"
             ".config/librewolf"
             ".config/r2modman"
             ".config/r2modmanPlus-local"
+            ".config/sops"
+
+            # .local
             ".local/share/zoxide"
             ".local/share/PrismLauncher"
             ".local/share/Steam"
-            ".steam"
           ];
         };
       };

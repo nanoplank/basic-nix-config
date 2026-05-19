@@ -13,6 +13,7 @@
       inputs.hjem.nixosModules.default
       inputs.disko.nixosModules.disko
       inputs.preservation.nixosModules.default
+      inputs.sops-nix.nixosModules.sops
 
       # hardware
       self.nixosModules.mainMachineHardware
@@ -34,6 +35,7 @@
       self.nixosModules.connectivity
       self.nixosModules.nix
       self.nixosModules.disko
+      self.nixosModules.sops
       self.nixosModules.preservation
 
       # programs
