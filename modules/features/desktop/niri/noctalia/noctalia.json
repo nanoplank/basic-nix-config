@@ -319,7 +319,7 @@
       "panelPosition": "follow_bar",
       "hideWallpaperFilenames": true,
       "useOriginalImages": false,
-      "overviewBlur": 0.4,
+      "overviewBlur": 0.92,
       "overviewTint": 0.6,
       "useWallhaven": false,
       "wallhavenQuery": "",
@@ -483,7 +483,7 @@
     "network": {
       "bluetoothRssiPollingEnabled": false,
       "bluetoothRssiPollIntervalMs": 60000,
-      "networkPanelView": "ethernet",
+      "networkPanelView": "wifi",
       "wifiDetailsViewMode": "grid",
       "bluetoothDetailsViewMode": "grid",
       "bluetoothHideUnnamedDevices": false,
@@ -633,10 +633,6 @@
       "activeTemplates": [
         {
           "enabled": true,
-          "id": "alacritty"
-        },
-        {
-          "enabled": true,
           "id": "btop"
         },
         {
@@ -670,6 +666,14 @@
         {
           "enabled": true,
           "id": "ghostty"
+        },
+        {
+          "enabled": true,
+          "id": "niri"
+        },
+        {
+          "enabled": true,
+          "id": "starship"
         }
       ],
       "enableUserTheming": false
@@ -728,7 +732,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/fog_forest_2.png"
+      "eDP-1": "/home/nixed/Wallpapers/wallhaven-e83opk.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
@@ -749,10 +753,10 @@
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1778586466000
+      "lastSeenTs": 0
     },
     "changelogState": {
-      "lastSeenVersion": "v4.7.5"
+      "lastSeenVersion": "v4.7.6"
     },
     "colorSchemesList": {
       "schemes": [],
