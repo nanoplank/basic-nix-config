@@ -34,17 +34,23 @@
     packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
       inherit pkgs;
 
+      extraSettings = [
+        {include = [{optional = true;} "~/.config/niri/noctalia.kdl"];}
+      ];
+
       settings = {
         spawn-at-startup = [
           (lib.getExe self'.packages.myNoctalia)
         ];
 
+        xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
+
         prefer-no-csd = {};
 
-        window-rule = {
-          geometry-corner-radius = 20;
-          clip-to-geometry = true;
-        };
+        #        window-rule = {
+        #          geometry-corner-radius = 20;
+        #          clip-to-geometry = true;
+        #        };
 
         input = {
           focus-follows-mouse = {};
@@ -147,17 +153,6 @@
           "w8" = settings;
           "w9" = settings;
         };
-
-        layout = {
-          gaps = 5;
-
-          focus-ring = {
-            width = 2;
-            active-color = "#8c8fa1";
-          };
-        };
-
-        xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
       };
     };
   };
