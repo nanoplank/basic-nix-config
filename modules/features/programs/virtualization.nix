@@ -10,17 +10,14 @@
       #  win-spice
     ];
 
-    # Manage the virtualisation services
     virtualisation = {
       libvirtd = {
         enable = true;
       };
     };
+
     services = {
       spice-vdagentd.enable = true;
-    };
-    programs = {
-      dconf.enable = true;
     };
   };
 }
