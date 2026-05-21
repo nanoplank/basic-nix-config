@@ -4,42 +4,6 @@
     lib,
     ...
   }: {
-    hardware = {
-      graphics = {
-        enable = true;
-        extraPackages = with pkgs; [
-          nvidia-vaapi-driver
-        ];
-      };
-
-      nvidia = {
-        modesetting.enable = true;
-        open = true;
-        videoAcceleration = true;
-        nvidiaSettings = true;
-
-        prime = {
-          # offload.enable = true;
-          # offload.enableOffloadCmd = true;
-          sync.enable = true;
-          intelBusId = "PCI:0:2:0";
-          nvidiaBusId = "PCI:01:00:0";
-        };
-      };
-    };
-
-    environment = {
-      variables = {
-        LIBVA_DRIVER_NAME = "nvidia";
-      };
-    };
-
-    services = {
-      xserver = {
-        videoDrivers = ["nvidia"];
-      };
-    };
-
     programs = {
       gamemode.enable = true;
       gamescope.enable = true;

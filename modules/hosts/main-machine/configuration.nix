@@ -32,6 +32,7 @@
       # system
       self.nixosModules.users
       self.nixosModules.locale
+      self.nixosModules.nvidia
       self.nixosModules.connectivity
       self.nixosModules.nix
       self.nixosModules.disko
