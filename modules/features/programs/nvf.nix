@@ -107,26 +107,6 @@
                 type = ["alejandra"];
               };
             };
-
-            #            zig = {
-            #              enable = true;
-            #            };
-
-            #            haskell = {
-            #              enable = true;
-            #            };
-
-            #            typescript = {
-            #              enable = true;
-            #            };
-
-            #            python = {
-            #              enable = true;
-            #            };
-            #
-            #            lua = {
-            #              enable = true;
-            #            };
           };
         };
       };
