@@ -11,7 +11,5 @@
     sops.defaultSopsFormat = "yaml";
 
     sops.age.keyFile = "/persistent/sops/age/keys.txt";
-
-    sops.secrets.password-key = {};
   };
 }

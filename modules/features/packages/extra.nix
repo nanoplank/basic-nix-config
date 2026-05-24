@@ -1,7 +1,7 @@
 {...}: {
   flake.nixosModules.extra = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
-      fastfetchMinimal
+      fastfetch.minimal
       android-tools
       pipes-rs
       torsocks
