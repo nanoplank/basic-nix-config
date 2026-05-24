@@ -34,6 +34,7 @@
       virtualization
       ghostty
       nushell
+      zoxide
       starship
       gaming
       nvf
