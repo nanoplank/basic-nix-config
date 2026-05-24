@@ -31,6 +31,7 @@
 
       # system
       self.nixosModules.users
+      self.nixosModules.hjem
       self.nixosModules.locale
       self.nixosModules.nvidia
       self.nixosModules.connectivity

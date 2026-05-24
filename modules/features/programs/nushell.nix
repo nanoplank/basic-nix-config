@@ -1,23 +1,26 @@
 {...}: {
   flake.nixosModules.nushell = {...}: {
-    hjem.users = {
-      nixed = {
-        files = {
-          # nushell configuration
-          ".config/nushell/env.nu".text = "
-          zoxide init nushell | save -f ~/.zoxide.nu
-          ";
+    hjem.nixed.rum.programs = {
+      starship = {
+        integrations = {
+          nushell = {
+            enable = true;
+          };
+        };
+      };
 
-          ".config/nushell/zoxide.nu".text = "";
+      zoxide = {
+        integrations = {
+          nushell = {
+            enable = true;
+          };
+        };
+      };
 
-          ".config/nushell/config.nu".text = "
-          $env.config.show_banner = false
-          $env.config.buffer_editor = 'nvim'
-          $env.editor = 'nvim'
-          mkdir ($nu.data-dir | path join 'vendor/autoload')
-          starship init nu | save -f ($nu.data-dir | path join 'vendor/autoload/starship.nu')
-          source ~/.zoxide.nu
-          ";
+      nushell = {
+        enable = true;
+        settings = {
+          show_banner = false;
         };
       };
     };
