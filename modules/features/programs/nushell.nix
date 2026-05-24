@@ -1,6 +1,6 @@
 {...}: {
   flake.nixosModules.nushell = {...}: {
-    hjem.nixed.rum.programs = {
+    hjem.users.nixed.rum.programs = {
       starship = {
         integrations = {
           nushell = {
