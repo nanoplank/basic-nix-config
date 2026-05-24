@@ -5,7 +5,9 @@
       preserveAt."/persistent" = {
         directories = [
           "/var/lib/systemd/timers"
+          "/etc/NetworkManager/system-connections"
           "/var/lib/bluetooth"
+          "/var/lib/tailscale"
           "/var/lib/libvirt"
           "/var/lib/mpd"
           {
