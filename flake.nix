@@ -21,21 +21,16 @@
 
     import-tree.url = "github:vic/import-tree";
 
+    hjem.follows = "hjem-rum/hjem";
+
     hjem-rum = {
       url = "github:snugnug/hjem-rum";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.hjem.follows = "hjem";
-    };
-
-    hjem = {
-      url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
 
     nvf.url = "github:notashelf/nvf";
-
   };
 
   outputs = inputs:
