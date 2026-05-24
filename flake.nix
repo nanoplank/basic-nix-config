@@ -26,15 +26,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hjem-rum = {
-      url = "github:snugnug/hjem-rum";
+    nvf = {
+      url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.hjem.follows = "hjem";
     };
 
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
-
-    nvf.url = "github:notashelf/nvf";
   };
 
   outputs = inputs:

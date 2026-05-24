@@ -1,9 +1,6 @@
 {...}: {
-  flake.nixosModules.hjem = {inputs, ...}: {
+  flake.nixosModules.hjem = {...}: {
     hjem = {
-      extraModules = [
-        inputs.hjem-rum.hjemModules.default
-      ];
       users.nixed = {
         enable = true;
         directory = "/home/nixed";
