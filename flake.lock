@@ -79,48 +79,22 @@
     },
     "hjem": {
       "inputs": {
-        "nix-darwin": [
-          "hjem-rum",
-          "nix-darwin"
-        ],
-        "nixpkgs": [
-          "hjem-rum",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1777732535,
-        "narHash": "sha256-gaHRkPaGAAjc6D4sZ+/haEKMJGO79tu4ROBlyOjXuco=",
-        "owner": "feel-co",
-        "repo": "hjem",
-        "rev": "ab977051adce0bf9f7c1032327e72f0febda6f7b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "feel-co",
-        "repo": "hjem",
-        "type": "github"
-      }
-    },
-    "hjem-rum": {
-      "inputs": {
-        "hjem": "hjem",
         "nix-darwin": "nix-darwin",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1779218498,
-        "narHash": "sha256-8HwHWtU2fsigSdpNL8XzfPOtc4n2DgUOHwMySaTxxrA=",
-        "owner": "snugnug",
-        "repo": "hjem-rum",
-        "rev": "921b561a7e847d6c9c669fdea84dbf626c4b66fb",
+        "lastModified": 1779575248,
+        "narHash": "sha256-Zh9+WMsxDbLVWwhccXjLW+PYO/5ZyUFQLZdYydycbx8=",
+        "owner": "feel-co",
+        "repo": "hjem",
+        "rev": "77bf113e3ce91c6632def66222198561437853dc",
         "type": "github"
       },
       "original": {
-        "owner": "snugnug",
-        "repo": "hjem-rum",
+        "owner": "feel-co",
+        "repo": "hjem",
         "type": "github"
       }
     },
@@ -179,7 +153,7 @@
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
-          "hjem-rum",
+          "hjem",
           "nixpkgs"
         ]
       },
@@ -287,11 +261,7 @@
       "inputs": {
         "disko": "disko",
         "flake-parts": "flake-parts",
-        "hjem": [
-          "hjem-rum",
-          "hjem"
-        ],
-        "hjem-rum": "hjem-rum",
+        "hjem": "hjem",
         "import-tree": "import-tree",
         "nixpkgs": "nixpkgs",
         "nvf": "nvf",

@@ -1,6 +1,7 @@
 {...}: {
   flake.nixosModules.disko = {...}: {
     fileSystems."/nix".neededForBoot = true;
+    fileSystems."/persistent".neededForBoot = true;
 
     disko.devices.nodev = {
       "/" = {
