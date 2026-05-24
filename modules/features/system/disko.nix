@@ -1,5 +1,7 @@
-{...}: {
+{inputs, ...}: {
   flake.nixosModules.disko = {...}: {
+    imports = [inputs.disko.nixosModules.disko];
+
     fileSystems."/nix".neededForBoot = true;
     fileSystems."/persistent".neededForBoot = true;
 

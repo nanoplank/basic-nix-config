@@ -1,5 +1,7 @@
-{...}: {
+{inputs, ...}: {
   flake.nixosModules.preservation = {...}: {
+    imports = [inputs.preservation.nixosModules.default];
+
     preservation = {
       enable = true;
       preserveAt."/persistent" = {

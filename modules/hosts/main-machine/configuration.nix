@@ -1,53 +1,43 @@
-{
-  self,
-  inputs,
-  ...
-}: {
+{self, ...}: {
   flake.nixosModules.mainMachineConfiguration = {
     config,
     pkgs,
     ...
   }: {
-    imports = [
-      inputs.nvf.nixosModules.default
-      inputs.hjem.nixosModules.default
-      inputs.disko.nixosModules.disko
-      inputs.preservation.nixosModules.default
-      inputs.sops-nix.nixosModules.sops
-
+    imports = with self.nixosModules; [
       # hardware
-      self.nixosModules.mainMachineHardware
+      mainMachineHardware
 
       # package bundles
-      self.nixosModules.core
-      self.nixosModules.extra
-      self.nixosModules.desktop
-      self.nixosModules.fonts
+      core
+      extra
+      desktop
+      fonts
 
       # desktop
-      self.nixosModules.niri
-      self.nixosModules.kde
-      self.nixosModules.ly
+      niri
+      kde
+      ly
 
       # system
-      self.nixosModules.users
-      self.nixosModules.hjem
-      self.nixosModules.locale
-      self.nixosModules.nvidia
-      self.nixosModules.connectivity
-      self.nixosModules.nix
-      self.nixosModules.disko
-      self.nixosModules.sops
-      self.nixosModules.preservation
+      users
+      hjem
+      locale
+      nvidia
+      connectivity
+      nix
+      disko
+      sops
+      preservation
 
       # programs
-      self.nixosModules.virtualization
-      self.nixosModules.terminal
-      self.nixosModules.nushell
-      self.nixosModules.gaming
-      self.nixosModules.nvf
-      self.nixosModules.mpd
-      self.nixosModules.nh
+      virtualization
+      terminal
+      nushell
+      gaming
+      nvf
+      mpd
+      nh
     ];
 
     boot.loader.systemd-boot.enable = true;
