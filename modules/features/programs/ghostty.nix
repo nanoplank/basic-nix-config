@@ -1,13 +1,14 @@
 {...}: {
-  flake.nixosModules.nushell = {...}: {
+  flake.nixosModules.ghostty = {...}: {
     hjem.users = {
       nixed = {
         rum = {
           programs = {
-            nushell = {
+            ghostty = {
               enable = true;
               settings = {
-                show_banner = false;
+                theme = "noctalia";
+                background-opacity = 0.7;
               };
             };
           };

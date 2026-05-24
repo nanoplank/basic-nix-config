@@ -32,8 +32,9 @@
 
       # programs
       virtualization
-      terminal
+      ghostty
       nushell
+      starship
       gaming
       nvf
       mpd

@@ -21,10 +21,17 @@
 
     import-tree.url = "github:vic/import-tree";
 
-    hjem = {
-      url = "github:feel-co/hjem";
+    hjem.follows = "hjem-rum/hjem";
+
+    hjem-rum = {
+      url = "github:snugnug/hjem-rum";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    #    hjem = {
+    #      url = "github:feel-co/hjem";
+    #      inputs.nixpkgs.follows = "nixpkgs";
+    #    };
 
     nvf = {
       url = "github:notashelf/nvf";

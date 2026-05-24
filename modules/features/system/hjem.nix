@@ -3,6 +3,9 @@
     imports = [inputs.hjem.nixosModules.default];
 
     hjem = {
+      extraModules = [
+        inputs.hjem-rum.hjemModules.default
+      ];
       users.nixed = {
         enable = true;
         directory = "/home/nixed";

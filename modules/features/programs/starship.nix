@@ -1,13 +1,15 @@
 {...}: {
-  flake.nixosModules.nushell = {...}: {
+  flake.nixosModules.starship = {...}: {
     hjem.users = {
       nixed = {
         rum = {
           programs = {
-            nushell = {
+            starship = {
               enable = true;
-              settings = {
-                show_banner = false;
+              integrations = {
+                nushell = {
+                  enable = true;
+                };
               };
             };
           };
