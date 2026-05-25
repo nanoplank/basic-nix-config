@@ -34,7 +34,7 @@
       virtualization
       gaming
 
-      # programs 
+      # programs
       fastfetch
       starship
       ghostty
@@ -48,6 +48,10 @@
 
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
+
+    # temporary fix: systemd-machine-id-commit.service
+    boot.initrd.systemd.suppressedUnits = ["systemd-machine-id-commit.service"];
+    systemd.suppressedSystemUnits = ["systemd-machine-id-commit.service"];
 
     # Kernel
     boot.kernelPackages = pkgs.linuxPackages_latest;
