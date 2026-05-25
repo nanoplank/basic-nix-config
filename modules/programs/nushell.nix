@@ -11,7 +11,10 @@
                 show_banner = false;
               };
               aliases = {
+                untar = "tar -xvf";
+                sysc = "systemctl";
                 cl = "clear";
+                v = "nvim";
               };
             };
           };
