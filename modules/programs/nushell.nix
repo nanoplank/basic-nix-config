@@ -7,8 +7,11 @@
             nushell = {
               enable = true;
               settings = {
-                show_banner = false;
                 buffer_editor = "nvim";
+                show_banner = false;
+              };
+              aliases = {
+                cl = "clear";
               };
             };
           };
