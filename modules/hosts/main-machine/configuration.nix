@@ -33,6 +33,7 @@
       # programs
       virtualization
       ghostty
+      fastfetch
       nushell
       zoxide
       starship
