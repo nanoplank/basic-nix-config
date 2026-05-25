@@ -29,6 +29,7 @@
           directories = [
             "basic-nix-config"
             "Wallpapers"
+            "Documents" 
             "Music"
 
             # dotfiles
