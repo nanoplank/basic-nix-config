@@ -11,7 +11,7 @@
                 show_banner = false;
               };
               extraConfig = ''
-              $env.editor = "nvim"
+                $env.editor = "nvim"
               '';
               aliases = {
                 untar = "tar -xvf";
