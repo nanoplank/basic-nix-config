@@ -34,12 +34,13 @@
       virtualization
       gaming
 
-      # programs
-      ghostty
+      # programs 
       fastfetch
+      starship
+      ghostty
       nushell
       zoxide
-      starship
+      btop
       nvf
       mpd
       nh
