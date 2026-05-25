@@ -10,6 +10,9 @@
                 buffer_editor = "nvim";
                 show_banner = false;
               };
+              extraConfig = "
+              $env.editor = 'nvim'
+              ";
               aliases = {
                 untar = "tar -xvf";
                 sysc = "systemctl";
