@@ -30,14 +30,16 @@
       sops
       preservation
 
-      # programs
+      # features
       virtualization
+      gaming
+
+      # programs
       ghostty
       fastfetch
       nushell
       zoxide
       starship
-      gaming
       nvf
       mpd
       nh
