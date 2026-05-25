@@ -6,12 +6,12 @@
   }: {
     users.users.nixed = {
       isNormalUser = true;
-      hashedPasswordFile = config.sops.secrets.password-key.path;
+      hashedPasswordFile = config.sops.secrets."users/nixed/password".path;
       description = "Nixed";
       extraGroups = ["networkmanager" "wheel" "libvirtd"];
       shell = pkgs.nushell;
     };
-    sops.secrets.password-key.neededForUsers = true;
+    sops.secrets."users/nixed/password".neededForUsers = true;
     users.mutableUsers = false;
   };
 }
