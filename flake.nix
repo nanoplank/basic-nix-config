@@ -38,8 +38,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    ncro.url = "github:feel-co/ncro";
-
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
   };
 
