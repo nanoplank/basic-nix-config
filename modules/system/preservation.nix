@@ -6,7 +6,7 @@
       enable = true;
       preserveAt."/persistent" = {
         directories = [
-          "/var/lib/systemd/timers" 
+          "/var/lib/systemd/timers"
           "/var/lib/bluetooth"
           "/var/lib/tailscale"
           "/var/lib/libvirt"
@@ -28,7 +28,7 @@
           directories = [
             "basic-nix-config"
             "Wallpapers"
-            "Documents" 
+            "Documents"
             "Music"
 
             # dotfiles
