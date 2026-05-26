@@ -28,13 +28,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    #    hjem = {
-    #      url = "github:feel-co/hjem";
-    #      inputs.nixpkgs.follows = "nixpkgs";
-    #    };
-
     nvf = {
       url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell/v5";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
