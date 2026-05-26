@@ -41,6 +41,7 @@
       nushell
       zoxide
       btop
+      git
       nvf
       mpd
       nh
