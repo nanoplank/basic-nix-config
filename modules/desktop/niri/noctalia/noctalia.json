@@ -242,8 +242,8 @@
       "smoothScrollEnabled": true
     },
     "ui": {
-      "fontDefault": "JetBrainsMono Nerd Font",
-      "fontFixed": "JetBrainsMono Nerd Font",
+      "fontDefault": "JetBrains Mono",
+      "fontFixed": "JetBrains Mono",
       "fontDefaultScale": 1,
       "fontFixedScale": 1,
       "tooltipsEnabled": false,
@@ -258,7 +258,7 @@
     "location": {
       "name": "",
       "weatherEnabled": false,
-      "weatherShowEffects": true,
+      "weatherShowEffects": false,
       "weatherTaliaMascotAlways": false,
       "useFahrenheit": false,
       "use12hourFormat": false,
@@ -266,9 +266,9 @@
       "showCalendarEvents": true,
       "showCalendarWeather": true,
       "analogClockInCalendar": false,
-      "firstDayOfWeek": -1,
+      "firstDayOfWeek": 1,
       "hideWeatherTimezone": false,
-      "hideWeatherCityName": true,
+      "hideWeatherCityName": false,
       "autoLocate": false
     },
     "calendar": {
@@ -674,6 +674,10 @@
         {
           "enabled": true,
           "id": "starship"
+        },
+        {
+          "enabled": true,
+          "id": "kitty"
         }
       ],
       "enableUserTheming": false
@@ -732,7 +736,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-e83opk.jpg"
+      "eDP-1": "/home/nixed/Wallpapers/wallhaven-x8rkl3.png"
     },
     "desktopWidgetsEditMode": false,
     "display": {
@@ -756,7 +760,7 @@
       "lastSeenTs": 0
     },
     "changelogState": {
-      "lastSeenVersion": "v4.7.6"
+      "lastSeenVersion": ""
     },
     "colorSchemesList": {
       "schemes": [],
