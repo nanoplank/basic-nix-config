@@ -40,6 +40,7 @@
       ghostty
       nushell
       zoxide
+      kitty
       btop
       git
       nvf
