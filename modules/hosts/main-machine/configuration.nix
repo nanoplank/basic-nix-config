@@ -16,7 +16,7 @@
 
       # desktop
       niri
-      #      kde
+      kde
       ly
 
       # system
@@ -24,7 +24,6 @@
       hjem
       locale
       nvidia
-      power
       connectivity
       nix
       disko

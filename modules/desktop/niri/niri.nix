@@ -14,13 +14,13 @@
     };
 
     environment.systemPackages = with pkgs; [
-      pywalfox-native
       qt6Packages.qt6ct
-      grim
-      slurp
-      gifski
-      tesseract
+      pywalfox-native
       translate-shell
+      tesseract
+      gifski
+      slurp
+      grim
       zbar
     ];
   };
@@ -50,6 +50,11 @@
         #        window-rule = {
         #          geometry-corner-radius = 20;
         #          clip-to-geometry = true;
+        #        };
+
+        #        cursor = {
+        #          xcursor-theme = "breeze_cursors";
+        #          xcursor-size = 24;
         #        };
 
         input = {
