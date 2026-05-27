@@ -15,7 +15,7 @@
       fonts
 
       # desktop
-      noctalia5
+      #      noctalia5
       niri
       kde
       ly

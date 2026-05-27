@@ -88,7 +88,7 @@
         };
 
         binds = {
-          "Mod+Q".spawn = lib.getExe pkgs.ghostty;
+          "Mod+Q".spawn = lib.getExe pkgs.kitty;
           "Mod+R".spawn-sh = "${lib.getExe pkgs.fuzzel} -I -f 'JetBrains Mono' --hide-before-typing --lines 1";
           "Mod+C".close-window = {};
           "Mod+F".maximize-column = {};
