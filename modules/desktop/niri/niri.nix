@@ -14,6 +14,7 @@
     };
 
     environment.systemPackages = with pkgs; [
+      adwaita-icon-theme
       qt6Packages.qt6ct
       pywalfox-native
       translate-shell
@@ -47,15 +48,10 @@
 
         prefer-no-csd = {};
 
-        #        window-rule = {
-        #          geometry-corner-radius = 20;
-        #          clip-to-geometry = true;
-        #        };
-
-        #        cursor = {
-        #          xcursor-theme = "breeze_cursors";
-        #          xcursor-size = 24;
-        #        };
+        cursor = {
+          xcursor-theme = "Adwaita";
+          xcursor-size = 24;
+        };
 
         input = {
           focus-follows-mouse = {};
