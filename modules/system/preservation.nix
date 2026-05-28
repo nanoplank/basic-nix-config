@@ -11,6 +11,7 @@
           "/var/lib/tailscale"
           "/var/lib/libvirt"
           "/var/lib/mpd"
+          "/srv/minecraft"
           {
             directory = "/var/lib/nixos";
             inInitrd = true;

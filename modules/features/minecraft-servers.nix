@@ -12,14 +12,20 @@
           vanilla = {
             enable = true;
             autoStart = false;
+            jvmOpts = "-Xmx4G -Xms4G";
+
+            package = pkgs.vanillaServers.vanilla-26_1_2;
+
             serverProperties = {
               max-players = 4;
               white-list = true;
               motd = "NixOS Minecraft server!";
             };
+
             whitelist = {
               elevons = "9d6ff915-0c04-4e95-b1b2-0b1dc3b47c88";
             };
+
             operators = {
               elevons = {
                 uuid = "9d6ff915-0c04-4e95-b1b2-0b1dc3b47c88";
@@ -27,7 +33,6 @@
                 bypassesPlayerLimit = true;
               };
             };
-            jvmOpts = "-Xmx4G -Xms4G";
           };
         };
       };
