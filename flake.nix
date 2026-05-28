@@ -20,6 +20,7 @@
     };
 
     import-tree.url = "github:vic/import-tree";
+    wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
 
     hjem.follows = "hjem-rum/hjem";
 
@@ -32,10 +33,6 @@
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
-
-    # minecraft-server-managment
 
     playit-nixos-module = {
       url = "github:pedorich-n/playit-nixos-module";

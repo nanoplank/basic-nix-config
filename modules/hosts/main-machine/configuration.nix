@@ -14,7 +14,7 @@
       desktop
       fonts
 
-      # desktop 
+      # desktop
       niri
       kde
       ly
@@ -30,7 +30,7 @@
       sops
       preservation
 
-      # features 
+      # features
       virtualization
       playit
       minecraft-servers
