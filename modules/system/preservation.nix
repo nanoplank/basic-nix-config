@@ -41,6 +41,9 @@
             ".config/r2modman"
             ".config/r2modmanPlus-local"
             ".config/sops"
+           
+            # .cache
+            ".cache/noctalia"
 
             # .local
             ".local/share/zoxide"
