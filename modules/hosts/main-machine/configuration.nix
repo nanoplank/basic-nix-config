@@ -14,8 +14,7 @@
       desktop
       fonts
 
-      # desktop
-      #      noctalia5
+      # desktop 
       niri
       kde
       ly
@@ -31,8 +30,10 @@
       sops
       preservation
 
-      # features
+      # features 
       virtualization
+      playit
+      minecraft-servers
       gaming
 
       # programs
