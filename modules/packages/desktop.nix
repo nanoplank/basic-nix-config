@@ -1,8 +1,8 @@
 {...}: {
   flake.nixosModules.desktop = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
-      kdePackages.dolphin
       android-file-transfer
+      kdePackages.dolphin
       tor-browser
       librewolf
       keepassxc
