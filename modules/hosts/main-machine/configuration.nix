@@ -7,10 +7,15 @@
     imports = with self.nixosModules; [
       # hardware
       mainMachineHardware
+      connectivity
+      nvidia
+      power
+      disko
 
       # package bundles
       core
       extra
+      gaming
       desktop
       fonts
 
@@ -20,22 +25,21 @@
       ly
 
       # system
-      users
-      hjem
-      locale
-      nvidia
-      power
-      connectivity
-      nix
-      disko
-      sops
       preservation
+      locale
+      users
+      boot
+      sops
+      nix
 
-      # features
-      virtualization
-      playit
+      # services
       minecraft-servers
-      gaming
+      tailscale
+      libvirtd
+      openssh
+      playit
+      wivrn
+      mpd
 
       # programs
       fastfetch
@@ -44,22 +48,13 @@
       nushell
       zoxide
       kitty
+      steam
       btop
+      hjem
       git
       nvf
-      mpd
       nh
     ];
-
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
-
-    # temporary fix: systemd-machine-id-commit.service
-    boot.initrd.systemd.suppressedUnits = ["systemd-machine-id-commit.service"];
-    systemd.suppressedSystemUnits = ["systemd-machine-id-commit.service"];
-
-    # Kernel
-    boot.kernelPackages = pkgs.linuxPackages_latest;
 
     system.stateVersion = "25.11";
   };

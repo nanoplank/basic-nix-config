@@ -1,9 +1,5 @@
 {...}: {
-  flake.nixosModules.gaming = {
-    pkgs,
-    lib,
-    ...
-  }: {
+  flake.nixosModules.steam = {pkgs, ...}: {
     programs = {
       gamemode.enable = true;
       gamescope.enable = true;
@@ -24,18 +20,5 @@
         protontricks.enable = true;
       };
     };
-
-    environment.systemPackages = with pkgs; [
-      prismlauncher
-      osu-lazer-bin
-      dxvk
-      gamescope
-      mangohud
-      r2modman
-      heroic
-      steamtinkerlaunch
-      wivrn
-      wayvr
-    ];
   };
 }

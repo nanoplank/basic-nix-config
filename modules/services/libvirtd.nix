@@ -1,5 +1,5 @@
 {...}: {
-  flake.nixosModules.virtualization = {pkgs, ...}: {
+  flake.nixosModules.libvirtd = {pkgs, ...}: {
     environment.systemPackages = with pkgs; [
       virt-manager
       virt-viewer

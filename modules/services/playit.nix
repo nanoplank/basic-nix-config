@@ -5,7 +5,7 @@
 
     services = {
       playit = {
-        enable = true;
+        enable = false;
         secretPath = config.sops.secrets.playit-secret.path;
       };
     };

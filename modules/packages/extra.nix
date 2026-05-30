@@ -5,6 +5,7 @@
       pipes-rs
       torsocks
       cmatrix
+      devenv
       yt-dlp
       oniux
       cava

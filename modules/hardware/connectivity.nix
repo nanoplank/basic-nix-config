@@ -19,30 +19,6 @@
         allowedUDPPorts = [9757 5353];
       };
     };
-
-    services = {
-      openssh = {
-        enable = true;
-        settings = {
-          PasswordAuthentication = false;
-          KbdInteractiveAuthentication = false;
-        };
-      };
-
-      tailscale = {
-        enable = true;
-        useRoutingFeatures = "server";
-      };
-
-      avahi = {
-        enable = true;
-        openFirewall = true;
-        nssmdns4 = true;
-        publish.enable = true;
-        publish.userServices = true;
-      };
-    };
-
     #    boot.kernel.sysctl."net.ipv4.ip_forward" = 1;
     #    boot.kernel.sysctl."net.ipv6.ip_forward" = 1;
   };
