@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780048612,
-        "narHash": "sha256-Md/eOK5OjmvvHc2H52pLZe4zpP4XyfiS5vHqfRCz2HU=",
+        "lastModified": 1780290312,
+        "narHash": "sha256-eTAlX0CwgB84Ts3GaBd944A3DRXVMzgA0EqroZBISUo=",
         "owner": "nix-community",
         "repo": "disko",
-        "rev": "caa775cf67bfdc47f940edd96c975b5016df9059",
+        "rev": "115e5211780054d8a890b41f0b7734cafad54dfe",
         "type": "github"
       },
       "original": {
@@ -240,11 +240,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1780113881,
-        "narHash": "sha256-AMOOt682Odr4GZwCwZ08/Q/21/Sh3DxfmOAoiQbTKhk=",
+        "lastModified": 1780290068,
+        "narHash": "sha256-npOVofUsuJhBPN1Dqy4GZK6AHueyfsUDZ0ZhHarDZNo=",
         "owner": "Infinidoge",
         "repo": "nix-minecraft",
-        "rev": "d9bd57f218cda7d6aac4b52546240da0df76a1f9",
+        "rev": "bdafde02da3adde43f0d851c4daf09fb9b2bfbc2",
         "type": "github"
       },
       "original": {
@@ -334,11 +334,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1779802740,
-        "narHash": "sha256-29WjPcJLEyElJDr3ze1c0uAwk2TCSur2ft3PYL+PD7w=",
+        "lastModified": 1780318576,
+        "narHash": "sha256-k2LNd+nhwMQRBcsrsxLkmfvFJm52u6mCM/mc4kVUq4s=",
         "owner": "pedorich-n",
         "repo": "playit-nixos-module",
-        "rev": "8dab4cab7fa741b1e03d734d970131ad2cbd84ec",
+        "rev": "8fb225bc4fc529d4351357ee89768e71457d9e49",
         "type": "github"
       },
       "original": {
