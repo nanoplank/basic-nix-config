@@ -1,5 +1,9 @@
 {...}: {
-  flake.nixosModules.libvirtd = {pkgs, ...}: {
+  flake.nixosModules.libvirtd = {
+    pkgs,
+    lib,
+    ...
+  }: {
     environment.systemPackages = with pkgs; [
       virt-manager
       virt-viewer
@@ -7,6 +11,8 @@
       spice-protocol
       win-spice
     ];
+
+    systemd.services.libvirtd.wantedBy = lib.mkForce [];
 
     virtualisation = {
       libvirtd = {
