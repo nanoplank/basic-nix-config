@@ -7,6 +7,7 @@
       preserveAt."/persistent" = {
         directories = [
           "/var/lib/systemd/timers"
+          "/var/lib/power-profiles-daemon"
           "/var/lib/bluetooth"
           "/var/lib/tailscale"
           "/var/lib/libvirt"
@@ -38,6 +39,7 @@
 
             # .config
             ".config/noctalia"
+            ".config/qt6ct"
             ".config/librewolf"
             ".config/r2modman"
             ".config/r2modmanPlus-local"
