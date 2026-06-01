@@ -21,7 +21,6 @@
 
       # desktop
       niri
-      # kde
       ly
 
       # system
