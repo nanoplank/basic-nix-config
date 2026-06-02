@@ -736,7 +736,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-x8rkl3.png"
+      "eDP-1": "/home/nixed/Wallpapers/wallhaven-j5wvvw.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
@@ -757,10 +757,10 @@
       }
     },
     "notificationsState": {
-      "lastSeenTs": 0
+      "lastSeenTs": 1780412913000
     },
     "changelogState": {
-      "lastSeenVersion": ""
+      "lastSeenVersion": "v4.7.6"
     },
     "colorSchemesList": {
       "schemes": [],
