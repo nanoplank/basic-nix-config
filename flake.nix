@@ -20,7 +20,10 @@
     };
 
     import-tree.url = "github:vic/import-tree";
-    wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
+    wrapper-modules = {
+      url = "github:BirdeeHub/nix-wrapper-modules";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     hjem.follows = "hjem-rum/hjem";
 
