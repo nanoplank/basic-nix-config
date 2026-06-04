@@ -14,10 +14,12 @@
     nixpkgs.config.allowUnfree = true;
 
     environment.systemPackages = with pkgs; [
-      alejandra
-      manix
-      nix-tree
       nix-inspect
+      alejandra
+      nix-tree
+      manix
+      nixd
+      nil
     ];
   };
 }
