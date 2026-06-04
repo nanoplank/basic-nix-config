@@ -7,17 +7,16 @@
             nushell = {
               enable = true;
               settings = {
-                buffer_editor = "nvim";
+                buffer_editor = "hx";
                 show_banner = false;
               };
               extraConfig = ''
-                $env.editor = "nvim"
+                $env.editor = "hx"
               '';
               aliases = {
                 untar = "tar -xvf";
                 sysc = "systemctl";
                 cl = "clear";
-                v = "nvim";
               };
             };
           };
