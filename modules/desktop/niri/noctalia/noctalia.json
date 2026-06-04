@@ -696,7 +696,7 @@
       "manualSunset": "18:30"
     },
     "hooks": {
-      "enabled": false,
+      "enabled": true,
       "wallpaperChange": "",
       "darkModeChange": "",
       "screenLock": "",
@@ -705,7 +705,7 @@
       "performanceModeDisabled": "",
       "startup": "",
       "session": "",
-      "colorGeneration": ""
+      "colorGeneration": "pkill -USR1 hx"
     },
     "plugins": {
       "autoUpdate": false,
