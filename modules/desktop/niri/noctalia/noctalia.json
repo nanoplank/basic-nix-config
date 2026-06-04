@@ -678,6 +678,10 @@
         {
           "enabled": true,
           "id": "kitty"
+        },
+        {
+          "enabled": true,
+          "id": "helix"
         }
       ],
       "enableUserTheming": false
@@ -736,7 +740,7 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-j5wvvw.jpg"
+      "eDP-1": "/home/nixed/Wallpapers/wallhaven-x8rkl3.png"
     },
     "desktopWidgetsEditMode": false,
     "display": {
@@ -757,7 +761,7 @@
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1780412913000
+      "lastSeenTs": 1780583264000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.6"
