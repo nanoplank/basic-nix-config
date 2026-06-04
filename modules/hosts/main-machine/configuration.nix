@@ -46,12 +46,12 @@
       ghostty
       nushell
       zoxide
+      helix
       kitty
       steam
       btop
       hjem
       git
-      nvf
       nh
     ];
 
