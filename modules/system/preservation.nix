@@ -31,6 +31,7 @@
             "basic-nix-config"
             "Wallpapers"
             "Documents"
+            "Projects"
             "Music"
 
             # dotfiles
