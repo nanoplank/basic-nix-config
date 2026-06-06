@@ -5,6 +5,7 @@
       pipes-rs
       torsocks
       cmatrix
+      lazygit
       devenv
       yt-dlp
       oniux
