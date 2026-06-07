@@ -318,11 +318,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1780764386,
-        "narHash": "sha256-WkwWDaKs+v66rco0xUYXx56FQU1iCIiaNBU62fRvRig=",
+        "lastModified": 1780795321,
+        "narHash": "sha256-neCfMqKxrtZ6M6Ch+It9hMVmUdbcNIAO6aKOneRs0Ug=",
         "owner": "pedorich-n",
         "repo": "playit-nixos-module",
-        "rev": "9367c3ea6033e7d3058cd6069dce1d03eddf0a91",
+        "rev": "7f07c6574d69cb94934bddd246f57d87d7ee9005",
         "type": "github"
       },
       "original": {
