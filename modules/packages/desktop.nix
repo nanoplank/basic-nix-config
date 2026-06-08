@@ -4,7 +4,6 @@
       tor-browser
       librewolf
       keepassxc
-      obsidian
       feather
       ghostty
       scrcpy
