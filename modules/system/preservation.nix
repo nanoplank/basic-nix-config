@@ -37,6 +37,7 @@
             # dotfiles
             ".mozilla"
             ".steam"
+            ".ssh"
 
             # .config
             ".config/noctalia"
