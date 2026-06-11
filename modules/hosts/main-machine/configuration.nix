@@ -41,6 +41,7 @@
       mpd
 
       # programs
+      obs-studio
       fastfetch
       starship
       ghostty
