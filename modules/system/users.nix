@@ -17,7 +17,7 @@
     sops.templates."authorized_keys" = {
       owner = "nixed";
       content = ''
-      ${config.sops.placeholder."publickeys/key"}
+        ${config.sops.placeholder."publickeys/key"}
       '';
       path = "/home/nixed/.ssh/authorized_keys";
     };
