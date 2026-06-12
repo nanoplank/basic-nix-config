@@ -7,6 +7,7 @@
       feather
       ghostty
       scrcpy
+      gajim
     ];
   };
 }
