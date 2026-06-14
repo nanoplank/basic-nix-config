@@ -34,6 +34,7 @@
       # services
       minecraft-servers
       tailscale
+      syncthing
       libvirtd
       openssh
       playit
