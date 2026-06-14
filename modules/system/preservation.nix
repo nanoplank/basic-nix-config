@@ -32,6 +32,7 @@
             "Wallpapers"
             "Documents"
             "Projects"
+            "Shared"
             "Music"
 
             # dotfiles
@@ -50,7 +51,10 @@
             # .cache
             ".cache/noctalia"
 
-            # .local
+            # .local/state
+            ".local/state/syncthing"
+
+            # .local/share
             ".local/share/zoxide"
             ".local/share/PrismLauncher"
             ".local/share/Steam"
