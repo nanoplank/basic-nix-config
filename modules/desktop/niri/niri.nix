@@ -46,7 +46,7 @@
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
 
-        prefer-no-csd = {};
+        prefer-no-csd = _: {};
 
         cursor = {
           xcursor-theme = "Adwaita";
@@ -54,7 +54,11 @@
         };
 
         input = {
-          focus-follows-mouse = {};
+          focus-follows-mouse = _: {
+            props = {
+              max-scroll-amount = "0%";
+            };
+          };
 
           keyboard = {
             xkb = {
@@ -66,8 +70,8 @@
           };
 
           touchpad = {
-            natural-scroll = {};
-            tap = {};
+            natural-scroll = _: {};
+            tap = _: {};
           };
 
           mouse = {
@@ -78,7 +82,7 @@
         outputs = {
           "eDP-1" = {
             hot-corners = {
-              off = {};
+              off = _: {};
             };
           };
         };
@@ -86,30 +90,30 @@
         binds = {
           "Mod+Q".spawn = lib.getExe pkgs.kitty;
           "Mod+R".spawn-sh = "${lib.getExe pkgs.fuzzel} -I -f 'JetBrains Mono' --hide-before-typing --lines 1";
-          "Mod+C".close-window = {};
-          "Mod+F".maximize-column = {};
-          "Mod+G".fullscreen-window = {};
-          "Mod+V".toggle-window-floating = {};
+          "Mod+C".close-window = _: {};
+          "Mod+F".maximize-column = _: {};
+          "Mod+G".fullscreen-window = _: {};
+          "Mod+V".toggle-window-floating = _: {};
           "Mod+L".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call lockScreen lock";
           "Mod+P".spawn-sh = "niri msg action set-dynamic-cast-window --id $(niri msg --json focused-window | jq .id)";
           "Mod+W".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call wallpaper toggle";
           "Mod+Print".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call plugin:screen-toolkit annotate";
           "Mod+N".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call plugin:screen-toolkit colorPicker";
 
-          "Mod+Left".focus-column-left = {};
-          "Mod+Right".focus-column-right = {};
-          "Mod+Up".focus-window-up = {};
-          "Mod+Down".focus-window-down = {};
+          "Mod+Left".focus-column-left = _: {};
+          "Mod+Right".focus-column-right = _: {};
+          "Mod+Up".focus-window-up = _: {};
+          "Mod+Down".focus-window-down = _: {};
 
           "Mod+Ctrl+Left".spawn-sh = "niri msg action consume-or-expel-window-left";
           "Mod+Ctrl+Right".spawn-sh = "niri msg action consume-or-expel-window-right";
           "Mod+Ctrl+Up".spawn-sh = "niri msg action consume-or-expel-window-up";
           "Mod+Ctrl+Down".spawn-sh = "niri msg action consume-or-expel-window-down";
 
-          "Mod+Shift+Left".move-column-left = {};
-          "Mod+Shift+Right".move-column-right = {};
-          "Mod+Shift+Up".move-window-up = {};
-          "Mod+Shift+Down".move-window-down = {};
+          "Mod+Shift+Left".move-column-left = _: {};
+          "Mod+Shift+Right".move-column-right = _: {};
+          "Mod+Shift+Up".move-window-up = _: {};
+          "Mod+Shift+Down".move-window-down = _: {};
 
           "Mod+1".focus-workspace = "w0";
           "Mod+2".focus-workspace = "w1";
