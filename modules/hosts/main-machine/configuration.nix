@@ -31,6 +31,10 @@
       sops
       nix
 
+      # security
+      run0
+      sudo
+
       # services
       minecraft-servers
       tailscale
