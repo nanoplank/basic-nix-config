@@ -8,6 +8,8 @@
         settings = {
           options = {
             urAccepted = -1;
+          };
+          gui = {
             user = "nixed";
           };
           folders = {
