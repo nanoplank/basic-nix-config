@@ -6,8 +6,9 @@
       enable = true;
       preserveAt."/persistent" = {
         directories = [
-          "/var/lib/systemd/timers"
           "/var/lib/power-profiles-daemon"
+          "/var/lib/systemd/timers"
+          "/var/lib/syncthing"
           "/var/lib/bluetooth"
           "/var/lib/tailscale"
           "/var/lib/libvirt"
@@ -32,7 +33,6 @@
             "Wallpapers"
             "Documents"
             "Projects"
-            "Shared"
             "Music"
 
             # dotfiles
@@ -50,9 +50,6 @@
 
             # .cache
             ".cache/noctalia"
-
-            # .local/state
-            ".local/state/syncthing"
 
             # .local/share
             ".local/share/zoxide"
