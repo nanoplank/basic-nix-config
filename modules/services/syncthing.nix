@@ -5,6 +5,9 @@
         enable = true;
         openDefaultPorts = true;
         settings = {
+          gui = {
+            user = "nixed";
+          };
           options = {
             urAccepted = -1;
           };
