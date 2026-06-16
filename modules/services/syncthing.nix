@@ -1,21 +1,12 @@
 {...}: {
-  flake.nixosModules.syncthing = {config, ...}: {
-    sops.secrets."syncthing/guipassword" = {};
+  flake.nixosModules.syncthing = {...}: {
     services = {
       syncthing = {
         enable = true;
-        guiPasswordFile = config.sops.secrets."syncthing/guipassword".path;
+        openDefaultPorts = true;
         settings = {
           options = {
             urAccepted = -1;
-          };
-          gui = {
-            user = "nixed";
-          };
-          folders = {
-            "/var/lib/syncthing" = {
-              id = "shared";
-            };
           };
         };
       };
