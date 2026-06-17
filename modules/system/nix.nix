@@ -10,6 +10,10 @@
     nixpkgs = {
       config = {
         allowUnfree = true;
+        permittedInsecurePackages = [
+          "librewolf-unwrapped-151.0.2-1"
+          "librewolf-151.0.2-1"
+        ];
       };
     };
 
