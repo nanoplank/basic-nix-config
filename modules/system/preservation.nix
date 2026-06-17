@@ -54,6 +54,7 @@
             # .local/share
             ".local/share/zoxide"
             ".local/share/PrismLauncher"
+            ".local/share/osu"
             ".local/share/Steam"
           ];
         };
