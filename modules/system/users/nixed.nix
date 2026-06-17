@@ -10,7 +10,7 @@
       isNormalUser = true;
       hashedPasswordFile = config.sops.secrets."users/nixed/password".path;
       description = "Nixed";
-      extraGroups = ["networkmanager" "wheel" "libvirtd" "syncthing"];
+      extraGroups = ["networkmanager" "wheel" "libvirtd"];
       shell = pkgs.nushell;
     };
     sops.secrets."publickeys/key" = {};
