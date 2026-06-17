@@ -8,7 +8,6 @@
         directories = [
           "/var/lib/power-profiles-daemon"
           "/var/lib/systemd/timers"
-          "/var/lib/syncthing"
           "/var/lib/bluetooth"
           "/var/lib/tailscale"
           "/var/lib/libvirt"
@@ -33,6 +32,7 @@
             "Wallpapers"
             "Documents"
             "Projects"
+            "Shared"
             "Music"
 
             # dotfiles
