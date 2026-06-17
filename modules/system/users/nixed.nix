@@ -1,5 +1,5 @@
 {...}: {
-  flake.nixosModules.users = {
+  flake.nixosModules.user-nixed = {
     config,
     pkgs,
     ...
@@ -10,7 +10,7 @@
       isNormalUser = true;
       hashedPasswordFile = config.sops.secrets."users/nixed/password".path;
       description = "Nixed";
-      extraGroups = ["networkmanager" "wheel" "libvirtd"];
+      extraGroups = ["networkmanager" "wheel" "libvirtd" "syncthing"];
       shell = pkgs.nushell;
     };
     sops.secrets."publickeys/key" = {};
