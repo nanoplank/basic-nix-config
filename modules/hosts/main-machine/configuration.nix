@@ -25,8 +25,8 @@
 
       # system
       preservation
+      user-nixed
       locale
-      users
       boot
       sops
       nix
