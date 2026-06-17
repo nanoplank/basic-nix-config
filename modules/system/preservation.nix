@@ -11,8 +11,8 @@
           "/var/lib/bluetooth"
           "/var/lib/tailscale"
           "/var/lib/libvirt"
-          "/var/lib/mpd"
           "/srv/minecraft"
+          "/var/lib/mpd"
           {
             directory = "/var/lib/nixos";
             inInitrd = true;
@@ -32,7 +32,6 @@
             "Wallpapers"
             "Documents"
             "Projects"
-            "Shared"
             "Music"
 
             # dotfiles
