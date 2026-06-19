@@ -13,7 +13,6 @@
       };
       hostName = "nixos";
 
-      # Firewall
       firewall = {
         enable = true;
         allowedTCPPorts = [9757 5353];
