@@ -54,7 +54,7 @@
         };
 
         input = {
-          focus-follows-mouse = _: {
+          focus-follows-mouse = {
             props = {
               max-scroll-amount = "0%";
             };
