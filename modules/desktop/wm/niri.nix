@@ -43,7 +43,7 @@
 
       settings = {
         spawn-at-startup = [
-          (lib.getExe self'.packages.myNoctalia)
+          (lib.getExe self'.packages.noctaliawrap)
         ];
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
@@ -96,11 +96,11 @@
           "Mod+F".maximize-column = _: {};
           "Mod+G".fullscreen-window = _: {};
           "Mod+V".toggle-window-floating = _: {};
-          "Mod+L".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call lockScreen lock";
+          "Mod+L".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call lockScreen lock";
           "Mod+P".spawn-sh = "niri msg action set-dynamic-cast-window --id $(niri msg --json focused-window | jq .id)";
-          "Mod+W".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call wallpaper toggle";
-          "Mod+Print".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call plugin:screen-toolkit annotate";
-          "Mod+N".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call plugin:screen-toolkit colorPicker";
+          "Mod+W".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call wallpaper toggle";
+          "Mod+Print".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call plugin:screen-toolkit annotate";
+          "Mod+N".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call plugin:screen-toolkit colorPicker";
 
           "Mod+Left".focus-column-left = _: {};
           "Mod+Right".focus-column-right = _: {};
@@ -139,11 +139,11 @@
           "Mod+Shift+9".move-column-to-workspace = "w8";
           "Mod+Shift+0".move-column-to-workspace = "w9";
 
-          "XF86AudioRaiseVolume".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call volume increase";
-          "XF86AudioLowerVolume".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call volume decrease";
-          "XF86AudioMute".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call volume muteOutput";
-          "XF86MonBrightnessUp".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call brightness increase";
-          "XF86MonBrightnessDown".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call brightness decrease";
+          "XF86AudioRaiseVolume".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call volume increase";
+          "XF86AudioLowerVolume".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call volume decrease";
+          "XF86AudioMute".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call volume muteOutput";
+          "XF86MonBrightnessUp".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call brightness increase";
+          "XF86MonBrightnessDown".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call brightness decrease";
         };
 
         workspaces = let
