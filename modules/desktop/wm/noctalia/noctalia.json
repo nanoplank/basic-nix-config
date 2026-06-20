@@ -682,6 +682,10 @@
         {
           "enabled": true,
           "id": "helix"
+        },
+        {
+          "enabled": true,
+          "id": "mango"
         }
       ],
       "enableUserTheming": false
@@ -740,28 +744,21 @@
     "openedPanel": "",
     "lockScreenActive": false,
     "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-x8rkl3.png"
+      "eDP-1": "/home/nixed/Wallpapers/wallhaven-47kge9.jpg"
     },
     "desktopWidgetsEditMode": false,
     "display": {
       "eDP-1": {
         "name": "eDP-1",
-        "connected": true,
         "scale": 1,
-        "width": 1920,
-        "height": 1080,
+        "width": 0,
+        "height": 0,
         "x": 0,
-        "y": 0,
-        "physical_width": 340,
-        "physical_height": 190,
-        "refresh_rate": 60000,
-        "vrr_supported": false,
-        "vrr_enabled": false,
-        "transform": "Normal"
+        "y": 0
       }
     },
     "notificationsState": {
-      "lastSeenTs": 1780583264000
+      "lastSeenTs": 1781617846000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.6"
