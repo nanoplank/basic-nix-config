@@ -139,11 +139,13 @@
           "Mod+Shift+9".move-column-to-workspace = "w8";
           "Mod+Shift+0".move-column-to-workspace = "w9";
 
-          "XF86AudioRaiseVolume".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call volume increase";
-          "XF86AudioLowerVolume".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call volume decrease";
-          "XF86AudioMute".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call volume muteOutput";
-          "XF86MonBrightnessUp".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call brightness increase";
-          "XF86MonBrightnessDown".spawn-sh = "${lib.getExe self'.packages.noctaliawrap} ipc call brightness decrease";
+          "XF86MonBrightnessUp".spawn-sh = "${lib.getExe pkgs.brightnessctl} s 2%+";
+          "XF86MonBrightnessDown".spawn-sh = "${lib.getExe pkgs.brightnessctl} s 2%-";
+
+          "XF86AudioRaiseVolume".spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
+          "XF86AudioLowerVolume".spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
+
+          "XF86AudioMute".spawn-sh = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
         };
 
         workspaces = let
