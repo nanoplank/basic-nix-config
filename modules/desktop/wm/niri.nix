@@ -8,9 +8,11 @@
     lib,
     ...
   }: {
-    programs.niri = {
-      enable = true;
-      package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri;
+    programs = {
+      niri = {
+        enable = true;
+        package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri;
+      };
     };
 
     environment.systemPackages = with pkgs; [
@@ -54,7 +56,7 @@
         };
 
         input = {
-          focus-follows-mouse = {
+          focus-follows-mouse = _: {
             props = {
               max-scroll-amount = "0%";
             };
