@@ -26,7 +26,7 @@
       inherit pkgs;
 
       autostart_sh = ''
-        ${lib.getExe self'.packages.myNoctalia}
+        ${lib.getExe self'.packages.noctaliawrap}
       '';
     };
   };
