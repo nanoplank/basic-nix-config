@@ -20,6 +20,7 @@
       fonts
 
       # desktop
+      mangowc
       niri
       ly
 
