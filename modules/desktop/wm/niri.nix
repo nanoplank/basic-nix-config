@@ -11,7 +11,7 @@
     programs = {
       niri = {
         enable = true;
-        package = self.packages.${pkgs.stdenv.hostPlatform.system}.myNiri;
+        package = self.packages.${pkgs.stdenv.hostPlatform.system}.niriwrap;
       };
     };
 
@@ -34,7 +34,7 @@
     self',
     ...
   }: {
-    packages.myNiri = inputs.wrapper-modules.wrappers.niri.wrap {
+    packages.niriwrap = inputs.wrapper-modules.wrappers.niri.wrap {
       inherit pkgs;
 
       extraSettings = [
