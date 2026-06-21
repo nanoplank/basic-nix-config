@@ -34,25 +34,36 @@
       '';
 
       settings = {
+        # keyboard settings
         repeat_rate = 40;
         repeat_delay = 250;
-        numlockon = 0;
+
         xkb_rules_layout = "us,ru";
         xkb_rules_options = "caps:swapescape";
+
+        # trackpad settings
         trackpad_natural_scrolling = 1;
-        enable_hotarea = 0;
+
+        # visiuals
+        animations = 0;
 
         # layout settings
-        circle_layout = "scroller,dwindle";
 
         # scroller
+
         scroller_default_proportion = 0.5;
         edge_scroller_pointer_focus = 0;
         scroller_structs = 20;
 
         # dwindle
+
         # dwindle_split_ratio = 0.5;
         # dwindle_smart_split = 1;
+
+        # overview settings
+        enable_hotarea = 0;
+
+        # tags & monitors
 
         tagrule = [
           "id:1,layout_name:scroller"
@@ -67,6 +78,8 @@
           "id:10,layout_name:scroller"
         ];
 
+        # key bindings
+
         bind = let
           mod = "SUPER";
         in [
@@ -75,10 +88,10 @@
 
           "${mod},c,killclient"
 
-          "${mod},Left,focusdir,left"
-          "${mod},Right,focusdir,right"
           "${mod},Up,focusdir,up"
           "${mod},Down,focusdir,down"
+          "${mod},Left,focusdir,left"
+          "${mod},Right,focusdir,right"
 
           "${mod}+SHIFT,Up,exchange_client,up"
           "${mod}+SHIFT,Down,exchange_client,down"
@@ -88,8 +101,6 @@
           "${mod},f,togglemaximizescreen"
           "${mod}+shift,f,togglefloating"
           "${mod},g,togglefullscreen"
-
-          "SUPER,n,switch_layout"
 
           "${mod},1,view,1,0"
           "${mod},2,view,2,0"
