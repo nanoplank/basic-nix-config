@@ -15,7 +15,6 @@
               '';
               aliases = {
                 untar = "tar -xvf";
-                sysc = "systemctl";
                 cl = "clear";
               };
             };
