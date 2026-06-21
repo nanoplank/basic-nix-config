@@ -83,8 +83,11 @@
         bind = let
           mod = "SUPER";
         in [
-          "${mod},r,spawn,${lib.getExe pkgs.fuzzel} -I -f 'JetBrains Mono' --hide-before-typing --lines 1"
+          "${mod},r,spawn_shell,${lib.getExe pkgs.fuzzel} -I -f 'JetBrains Mono' --hide-before-typing --lines 1"
           "${mod},q,spawn,kitty"
+          "${mod},l,spawn_shell,${lib.getExe self'.packages.noctaliawrap} ipc call lockScreen lock"
+          "${mod},w,spawn_shell,${lib.getExe self'.packages.noctaliawrap} ipc call wallpaper toggle"
+          "${mod},print,spawn_shell,${lib.getExe self'.packages.noctaliawrap} ipc call plugin:screen-toolkit annotate"
 
           "${mod},c,killclient"
 
@@ -93,10 +96,10 @@
           "${mod},Left,focusdir,left"
           "${mod},Right,focusdir,right"
 
-          "${mod}+SHIFT,Up,exchange_client,up"
-          "${mod}+SHIFT,Down,exchange_client,down"
-          "${mod}+SHIFT,Left,exchange_client,left"
-          "${mod}+SHIFT,Right,exchange_client,right"
+          "${mod}+shift,Up,exchange_client,up"
+          "${mod}+shift,Down,exchange_client,down"
+          "${mod}+shift,Left,exchange_client,left"
+          "${mod}+shift,Right,exchange_client,right"
 
           "${mod},f,togglemaximizescreen"
           "${mod}+shift,f,togglefloating"
@@ -112,15 +115,15 @@
           "${mod},9,view,8,0"
           "${mod},0,view,9,0"
 
-          "${mod}+SHIFT,1,tag,1,0"
-          "${mod}+SHIFT,2,tag,2,0"
-          "${mod}+SHIFT,3,tag,3,0"
-          "${mod}+SHIFT,4,tag,4,0"
-          "${mod}+SHIFT,5,tag,5,0"
-          "${mod}+SHIFT,6,tag,6,0"
-          "${mod}+SHIFT,8,tag,7,0"
-          "${mod}+SHIFT,9,tag,8,0"
-          "${mod}+SHIFT,0,tag,9,0"
+          "${mod}+shift,1,tag,1,0"
+          "${mod}+shift,2,tag,2,0"
+          "${mod}+shift,3,tag,3,0"
+          "${mod}+shift,4,tag,4,0"
+          "${mod}+shift,5,tag,5,0"
+          "${mod}+shift,6,tag,6,0"
+          "${mod}+shift,8,tag,7,0"
+          "${mod}+shift,9,tag,8,0"
+          "${mod}+shift,0,tag,9,0"
 
           "NONE,XF86MonBrightnessUp,spawn,${lib.getExe pkgs.brightnessctl} s 2%+"
           "NONE,XF86MonBrightnessDown,spawn,${lib.getExe pkgs.brightnessctl} s 2%-"
