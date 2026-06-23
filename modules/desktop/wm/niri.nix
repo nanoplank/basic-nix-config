@@ -91,7 +91,7 @@
 
         binds = {
           "Mod+Q".spawn = lib.getExe pkgs.kitty;
-          "Mod+R".spawn-sh = "${lib.getExe pkgs.fuzzel} -I -f 'JetBrains Mono' --hide-before-typing --lines 1";
+          "Mod+R".spawn-sh = "${lib.getExe pkgs.fuzzel} -I -f 'JetBrains Mono Nerd Font' --hide-before-typing --lines 1";
           "Mod+C".close-window = _: {};
           "Mod+F".maximize-column = _: {};
           "Mod+G".fullscreen-window = _: {};

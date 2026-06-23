@@ -83,7 +83,7 @@
         bind = let
           mod = "SUPER";
         in [
-          "${mod},r,spawn_shell,${lib.getExe pkgs.fuzzel} -I -f 'JetBrains Mono' --hide-before-typing --lines 1"
+          "${mod},r,spawn_shell,${lib.getExe pkgs.fuzzel} -I -f 'JetBrains Mono Nerd Font' --hide-before-typing --lines 1"
           "${mod},q,spawn,kitty"
           "${mod},l,spawn_shell,${lib.getExe self'.packages.noctaliawrap} ipc call lockScreen lock"
           "${mod},w,spawn_shell,${lib.getExe self'.packages.noctaliawrap} ipc call wallpaper toggle"
