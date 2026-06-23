@@ -8,7 +8,7 @@
               enable = true;
               settings = {
                 include = "themes/noctalia.conf";
-                font_family = "JetBrainsMono";
+                font_family = "JetBrains Mono Nerd Font";
                 confirm_os_window_close = 0;
                 background_opacity = 1;
                 cursor_trail = 1;
