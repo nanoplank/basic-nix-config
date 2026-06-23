@@ -178,7 +178,6 @@
       "screenOverrides": []
     },
     "general": {
-      "avatarImage": "/home/nixed/Wallpapers/milk-chan/out.png",
       "dimmerOpacity": 0.2,
       "showScreenCorners": false,
       "forceBlackScreenCorners": false,
@@ -242,8 +241,8 @@
       "smoothScrollEnabled": true
     },
     "ui": {
-      "fontDefault": "JetBrains Mono",
-      "fontFixed": "JetBrains Mono",
+      "fontDefault": "JetBrainsMono Nerd Font",
+      "fontFixed": "JetBrainsMono Nerd Font",
       "fontDefaultScale": 1,
       "fontFixedScale": 1,
       "tooltipsEnabled": false,
@@ -743,9 +742,6 @@
     "barVisible": true,
     "openedPanel": "",
     "lockScreenActive": false,
-    "wallpapers": {
-      "eDP-1": "/home/nixed/Wallpapers/wallhaven-47kge9.jpg"
-    },
     "desktopWidgetsEditMode": false,
     "display": {
       "eDP-1": {
@@ -756,9 +752,6 @@
         "x": 0,
         "y": 0
       }
-    },
-    "notificationsState": {
-      "lastSeenTs": 1781617846000
     },
     "changelogState": {
       "lastSeenVersion": "v4.7.6"
