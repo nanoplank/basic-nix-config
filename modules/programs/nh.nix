@@ -1,10 +1,14 @@
 {...}: {
   flake.nixosModules.nh = {...}: {
-    programs.nh = {
-      enable = true;
-      clean.enable = true;
-      clean.extraArgs = "--keep-since 7d --keep 4";
-      flake = ".#mainMachine";
+    programs = {
+      nh = {
+        enable = true;
+        clean = {
+          enable = true;
+          extraArgs = "--keep-since 7d --keep 4";
+        };
+        flake = ".#mainMachine";
+      };
     };
   };
 }

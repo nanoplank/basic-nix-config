@@ -2,111 +2,125 @@
   flake.nixosModules.nvf = {...}: {
     imports = [inputs.nvf.nixosModules.default];
 
-    programs.nvf = {
-      enable = true;
-      settings = {
-        vim = {
-          theme = {
-            enable = true;
-            transparent = true;
-            name = "everforest";
-            style = "soft";
-          };
-
-          keymaps = [
-            {
-              key = "<leader>m";
-              mode = "n";
-              silent = true;
-              action = ":Neotree";
-            }
-          ];
-
-          binds = {
-            whichKey = {
+    programs = {
+      nvf = {
+        enable = true;
+        settings = {
+          vim = {
+            theme = {
               enable = true;
-              setupOpts = {
-                preset = "helix";
-              };
-            };
-          };
-
-          clipboard = {
-            enable = true;
-            providers = {
-              wl-copy.enable = true;
-            };
-            registers = "unnamedplus";
-          };
-
-          statusline = {
-            lualine = {
-              enable = true;
-            };
-          };
-
-          telescope = {
-            enable = true;
-          };
-
-          autocomplete = {
-            blink-cmp = {
-              enable = true;
-            };
-          };
-
-          treesitter = {
-            enable = true;
-          };
-
-          lsp = {
-            enable = true;
-          };
-
-          git = {
-            enable = true;
-          };
-
-          filetree = {
-            neo-tree = {
-              enable = true;
-              setupOpts = {
-                enable_git_status = true;
-              };
-            };
-          };
-
-          utility = {
-            ccc.enable = false;
-            diffview-nvim.enable = true;
-            grug-far-nvim.enable = true;
-
-            motion = {
-              hop.enable = true;
-              leap.enable = true;
-            };
-          };
-
-          terminal = {
-            toggleterm = {
-              enable = true;
-            };
-          };
-
-          languages = {
-            rust = {
-              enable = true;
+              transparent = true;
+              name = "everforest";
+              style = "soft";
             };
 
-            nu = {
-              enable = true;
-            };
+            keymaps = [
+              {
+                key = "<leader>m";
+                mode = "n";
+                silent = true;
+                action = ":Neotree";
+              }
+            ];
 
-            nix = {
-              enable = true;
-              format = {
+            binds = {
+              whichKey = {
                 enable = true;
-                type = ["alejandra"];
+                setupOpts = {
+                  preset = "helix";
+                };
+              };
+            };
+
+            clipboard = {
+              enable = true;
+              providers = {
+                wl-copy = {
+                  enable = true;
+                };
+              };
+              registers = "unnamedplus";
+            };
+
+            statusline = {
+              lualine = {
+                enable = true;
+              };
+            };
+
+            telescope = {
+              enable = true;
+            };
+
+            autocomplete = {
+              blink-cmp = {
+                enable = true;
+              };
+            };
+
+            treesitter = {
+              enable = true;
+            };
+
+            lsp = {
+              enable = true;
+            };
+
+            git = {
+              enable = true;
+            };
+
+            filetree = {
+              neo-tree = {
+                enable = true;
+                setupOpts = {
+                  enable_git_status = true;
+                };
+              };
+            };
+
+            utility = {
+              ccc = {
+                enable = false;
+              };
+              diffview-nvim = {
+                enable = true;
+              };
+              grug-far-nvim = {
+                enable = true;
+              };
+
+              motion = {
+                hop = {
+                  enable = true;
+                };
+                leap = {
+                  enable = true;
+                };
+              };
+            };
+
+            terminal = {
+              toggleterm = {
+                enable = true;
+              };
+            };
+
+            languages = {
+              rust = {
+                enable = true;
+              };
+
+              nu = {
+                enable = true;
+              };
+
+              nix = {
+                enable = true;
+                format = {
+                  enable = true;
+                  type = ["alejandra"];
+                };
               };
             };
           };
