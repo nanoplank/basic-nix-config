@@ -5,62 +5,100 @@
     ...
   }: {
     imports = with self.nixosModules; [
-      # hardware
-      mainMachineHardware
-      connectivity
-      nvidia
-      power
+      # boot
+      initrd
+      kernel
+
+      # boot/loader
+      systemd-boot
+      efi
+
+      # disko
       disko
 
-      # package bundles
+      # environment
+      variables
+
+      # environment/systemPackages
       core
       extra
       gaming
       desktop
+
+      # fonts
       fonts
 
-      # desktop
-      mangowc
-      niri
-      ly
+      # hardware
+      mainMachineHardware
+      bluetooth
+      nvidia
 
-      # system
-      preservation
-      user-nixed
-      locale
-      boot
-      sops
+      # i18n
+      defaultLocale
+      extraLocaleSettings
+
+      # networking
+      networkmanager
+      firewall
+      hostName
+
+      # nix
       nix
+
+      # preservation
+      preservation
+
+      # programs
+      obs-studio
+      gamescope
+      fastfetch
+      starship
+      gamemode
+      ghostty
+      nushell
+      mangowc
+      zoxide
+      helix
+      kitty
+      steam
+      btop
+      niri
+      hjem
+      git
+      nh
 
       # security
       run0
       sudo
 
       # services
+      power-profiles-daemon
       minecraft-servers
       tailscale
       libvirtd
+      pipewire
+      snapper
       openssh
       playit
+      upower
       wivrn
       mpd
+      ly
 
-      # programs
-      obs-studio
-      fastfetch
-      starship
-      ghostty
-      nushell
-      zoxide
-      helix
-      kitty
-      steam
-      btop
-      hjem
-      git
-      nh
+      # sops
+      sops
+
+      # system
+      stateVersion
+
+      # systemd
+      suppressedSystemUnits
+
+      # time
+      timeZone
+
+      # users
+      nixed
     ];
-
-    system.stateVersion = "25.11";
   };
 }
