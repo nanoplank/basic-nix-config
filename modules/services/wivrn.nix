@@ -1,8 +1,10 @@
 {...}: {
   flake.nixosModules.wivrn = {pkgs, ...}: {
-    environment.systemPackages = with pkgs; [
-      wayvr
-    ];
+    environment = {
+      systemPackages = with pkgs; [
+        wayvr
+      ];
+    };
     services = {
       wivrn = {
         enable = true;

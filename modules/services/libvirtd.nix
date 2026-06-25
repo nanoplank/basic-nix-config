@@ -4,15 +4,23 @@
     lib,
     ...
   }: {
-    environment.systemPackages = with pkgs; [
-      virt-manager
-      virt-viewer
-      spice
-      spice-protocol
-      win-spice
-    ];
+    environment = {
+      systemPackages = with pkgs; [
+        virt-manager
+        virt-viewer
+        spice
+        spice-protocol
+        win-spice
+      ];
+    };
 
-    systemd.services.libvirtd.wantedBy = lib.mkForce [];
+    systemd = {
+      services = {
+        libvirtd = {
+          wantedBy = lib.mkForce [];
+        };
+      };
+    };
 
     virtualisation = {
       libvirtd = {
@@ -21,7 +29,9 @@
     };
 
     services = {
-      spice-vdagentd.enable = true;
+      spice-vdagentd = {
+        enable = true;
+      };
     };
   };
 }
