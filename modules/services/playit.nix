@@ -5,9 +5,19 @@
     ...
   }: {
     imports = [inputs.playit-nixos-module.nixosModules.default];
-    sops.secrets.playit-secret = {};
+    sops = {
+      secrets = {
+        playit-secret = {};
+      };
+    };
 
-    systemd.services.playit.wantedBy = lib.mkForce [];
+    systemd = {
+      services = {
+        playit = {
+          wantedBy = lib.mkForce [];
+        };
+      };
+    };
 
     services = {
       playit = {
