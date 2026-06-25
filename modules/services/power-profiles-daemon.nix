@@ -1,10 +1,7 @@
 {...}: {
-  flake.nixosModules.power = {...}: {
+  flake.nixosModules.power-profiles-daemon = {...}: {
     services = {
       power-profiles-daemon = {
-        enable = true;
-      };
-      upower = {
         enable = true;
       };
     };
